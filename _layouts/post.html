@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <p class="eyebrow">Post</p>
+  <h1>{{ page.title | escape }}</h1>
+  {% if page.date %}
+    <p class="lede">{{ page.date | date: "%B %-d, %Y" }}</p>
+  {% endif %}
+</section>
+
+<section class="meetups-section">
+  {{ content }}
+</section>

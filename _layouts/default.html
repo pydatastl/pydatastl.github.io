@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}
+    </title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="stylesheet" href="{{ '/assets/css/skelaton.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    {% include custom.html %}
+    {% if site.ga_tracking %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_tracking }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.ga_tracking }}', {
+          anonymize_ip: {{ site.ga_tracking_anonymize_ip | default: true }}
+        });
+      </script>
+    {% endif %}
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container">
+          <a class="brand" href="{{ '/' | relative_url }}">
+            {% if site.logo %}
+              <img class="brand-logo" src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }} logo">
+            {% endif %}
+            <span class="brand-text">{{ site.title }}</span>
+          </a>
+          <nav class="site-nav">
+            {% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
+            {% for nav_page in nav_pages %}
+              <a href="{{ nav_page.url | relative_url }}">{{ nav_page.title | escape }}</a>
+            {% endfor %}
+            {% if site.aux_links %}
+              {% for link in site.aux_links %}
+                {% assign label = link[0] %}
+                {% assign url = link[1][0] %}
+                <a href="{{ url }}" {% if site.aux_links_new_tab %}target="_blank" rel="noopener"{% endif %}>{{ label }}</a>
+              {% endfor %}
+            {% endif %}
+          </nav>
+        </div>
+      </header>
+      <main class="page-content">
+        <div class="container">
+          {{ content }}
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="container footer-content">
+          <p>PyData STL is a NumFOCUS community. Built with Jekyll.</p>
+          <div class="footer-brand">
+            <div class="footer-socials" aria-label="PyData STL social links">
+              <a href="https://www.linkedin.com/company/pydata-stl" aria-label="PyData STL on LinkedIn">
+                <img src="{{ '/assets/images/linkedin.png' | relative_url }}" alt="LinkedIn">
+              </a>
+              <a href="https://x.com/PyDataSTL" aria-label="PyData STL on X">
+                <img src="{{ '/assets/images/twitter.png' | relative_url }}" alt="X">
+              </a>
+            </div>
+            {% if site.logo %}
+              <img class="partner-logo" src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }} logo">
+            {% endif %}
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

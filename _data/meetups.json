@@ -1,0 +1,16 @@
+[
+  {
+    "title": "PyData STL Meetup",
+    "date": "2026-06-12",
+    "time": "6:00 PM",
+    "location": "TBD",
+    "description": "Monthly community meetup with talks and networking.",
+    "rsvp_url": "https://www.meetup.com/pydatastl/",
+    "image": "/assets/images/pydatastl.jpg",
+    "agenda": [
+      "Welcome and announcements",
+      "Talks",
+      "Networking"
+    ]
+  }
+]
