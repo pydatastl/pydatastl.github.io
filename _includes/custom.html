@@ -1,2 +1,5 @@
-<link rel="icon" href="data:,">
+{% if site.logo %}
+	<link rel="icon" href="{{ site.logo | relative_url }}">
+	<link rel="apple-touch-icon" href="{{ site.logo | relative_url }}">
+{% endif %}
 

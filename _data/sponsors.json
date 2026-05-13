@@ -1,0 +1,16 @@
+[
+	{
+		"name": "NumFOCUS",
+		"description": "Promoting open code for better science",
+		"type": "Group sponsor",
+		"link": "https://numfocus.org",
+		"logo": "/assets/images/numfocus.png"
+	},
+	{
+		"name": "PyData",
+		"description": "PyData provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. The global PyData network promotes discussion of best practices, new approaches, and emerging technologies for data management, processing, analytics, and visualization. PyData communities approach data science using many languages, including (but not limited to) Python, Julia, and R.",
+		"type": "Community sponsor",
+		"link": "https://pydata.org",
+		"logo": "/assets/images/pydata.png"
+	}
+]
