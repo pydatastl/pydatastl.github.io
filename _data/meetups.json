@@ -57,7 +57,7 @@
   },
   {
     "title": "Efficient Neural Networks Through Tensor Networks",
-    "date": "2026-06-01",
+    "date": "2026-06-08",
     "time": "5:30 PM",
     "location": "Spark Coworking St. Louis",
     "description": "Modern AI systems continue to grow larger and more computationally expensive. This session explores an alternative approach inspired by physics and scientific computing: tensor networks. These techniques can compress neural network representations while preserving much of their performance, offering a possible path toward more efficient AI systems.",
