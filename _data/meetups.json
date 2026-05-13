@@ -1,16 +1,58 @@
 [
   {
-    "title": "PyData STL Meetup",
-    "date": "2026-06-12",
+    "title": "PyData STL Kickoff Meetup: Quantum vs Classical Randomness",
+    "date": "2026-02-02",
     "time": "6:00 PM",
-    "location": "TBD",
-    "description": "Monthly community meetup with talks and networking.",
-    "rsvp_url": "https://www.meetup.com/pydatastl/",
+    "location": "St Louis County Library Grand Glaize Branch",
+    "description": "Randomness powers simulation, cryptography, statistics, and machine learning, but are all sources of randomness the same? In this talk, we’ll explore the difference between: classical randomness (dice, noise, pseudorandom number generators) quantum randomness (measurement, superposition, and qubits) We’ll discuss what “random” really means, how random numbers are generated in practice, and whether quantum mechanics truly produces a deeper kind of randomness than anything classical physics allows. The talk is beginner-friendly and requires no physics background.",
+    "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/312686205/",
     "image": "/assets/images/pydatastl.jpg",
     "agenda": [
-      "Welcome and announcements",
-      "Talks",
-      "Networking"
+      "Meet & Greet, networking, introductions",
+      "Talk + Q&A",
+      "Wrap-up"
+    ]
+  },
+  {
+    "title": "The Hidden Power of Synthetic Data: Teaching Models What Real Data Can’t",
+    "date": "2026-03-02",
+    "time": "6:00 PM",
+    "location": "St. Louis County Library Daniel Boone Branch",
+    "description": "Real-world data can be limited, expensive, or restricted by privacy concerns. Synthetic data offers a way to generate realistic datasets that help train and test models when real data isn’t enough.",
+    "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/313352419",
+    "image": "/assets/images/pydatastl.jpg",
+    "agenda": [
+      "Meet & Greet, networking, introductions",
+      "Talk + Q&A",
+      "Wrap-up"
+    ]
+  },
+  {
+    "title": "Debunking the myths of Quantum AI",
+    "date": "2026-04-06",
+    "time": "5:30 PM",
+    "location": "Spark Coworking St. Louis",
+    "description": "Join us at PyData St. Louis for a talk and community discussion on debunking the myths of Quantum AI and understanding what the technology can realistically do today. Quantum computing and AI are often discussed together, but many claims about “Quantum AI” are misunderstood or exaggerated. This session will explore what quantum computing actually is, where it might intersect with machine learning, and what data scientists should realistically expect from the field.",
+    "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/313764006",
+    "image": "/assets/images/pydatastl.jpg",
+    "agenda": [
+      "Meet & Greet, networking, introductions",
+      "Talk + Q&A",
+      "Wrap-up"
+    ]
+  },
+  {
+    "title": "Embracing Noise: How Data Corruption Can Make Models Smarter",
+    "date": "2026-05-04",
+    "time": "5:30 PM",
+    "location": "Spark Coworking St. Louis",
+    "description": "Machine learning is often built on the assumption of clean, high-quality data. In reality, data is messy, incomplete, and noisy. This session explores a powerful idea: introducing controlled corruption during training can improve robustness, reduce overfitting, and help models perform better in real-world conditions.",
+    "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/314320971",
+    "image": "/assets/images/pydatastl.jpg",
+    "agenda": [
+      "Meet & Greet, networking, introductions",
+      "Talk + Q&A",
+      "Wrap-up"
     ]
   }
 ]
