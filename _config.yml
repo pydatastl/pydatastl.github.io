@@ -36,12 +36,7 @@ ga_tracking: G-84WDCHVKH1
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 # Aux links for the upper right navigation
-aux_links:
-  "PyData STL on GitHub":
-    - "//github.com/pydatastl/"
-
-# Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: true
+aux_links: null
 
 # Build settings
 plugins:
