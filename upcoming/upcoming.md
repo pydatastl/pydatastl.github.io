@@ -14,15 +14,29 @@ permalink: /upcoming_meetups/
 </section>
 
 <section class="meetups-section">
-	{% assign upcoming_pages = site.pages | where: "parent", "upcoming meetups" | sort: "nav_order" %}
-	{% if upcoming_pages.size > 0 %}
+	{% assign now_ts = "now" | date: "%s" %}
+	{% assign today_str = "now" | date: "%Y-%m-%d" %}
+	{% assign meetups = site.data.meetups | sort: "date" %}
+	{% assign upcoming = "" | split: "" %}
+	{% for meetup in meetups %}
+		{% if meetup.date == today_str %}
+			{% assign upcoming = upcoming | push: meetup %}
+		{% else %}
+			{% assign meetup_ts = meetup.date | date: "%s" %}
+			{% if meetup_ts > now_ts %}
+				{% assign upcoming = upcoming | push: meetup %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+	{% if upcoming.size > 0 %}
 		<div class="meetups-grid">
-			{% for meetup in upcoming_pages %}
+			{% for meetup in upcoming %}
 				<div class="meetup-card">
-					<h2><a href="{{ meetup.url | relative_url }}">{{ meetup.title }}</a></h2>
-					{% if meetup.description %}
-						<p>{{ meetup.description }}</p>
-					{% endif %}
+					<h2>{{ meetup.title }}</h2>
+					<p>{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
+					{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
+					{% if meetup.description %}<p>{{ meetup.description }}</p>{% endif %}
+					{% if meetup.rsvp_url %}<p><a class="button" href="{{ meetup.rsvp_url }}">RSVP</a></p>{% endif %}
 				</div>
 			{% endfor %}
 		</div>
