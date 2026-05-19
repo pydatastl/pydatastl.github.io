@@ -12,5 +12,12 @@
 		"type": "Community sponsor",
 		"link": "https://pydata.org",
 		"logo": "/assets/images/pydata.png"
+	},
+	{
+		"name": "Spark St. Louis",
+		"description": "St. Louis' newest and most collaborative coworking space, features private offices and shared workspace for entrepreneurs, creators and innovators. Spark supports the growing St. Louis entrepreneurial ecosystem, placing community members within close proximity to hundreds of successful businesses, dining & entertainment options and cultural experiences within Ballpark Village and downtown St. Louis. Located in PWC Pennant Building, Spark is a collaborative workspace providing local entrepreneurs and startups an affordable and efficient way to grow their businesses and teams.",
+		"type": "Event sponsor",
+		"link": "https://sparkcoworking.com/st-louis/",
+		"logo": "/assets/images/sparkstl.png"
 	}
 ]
