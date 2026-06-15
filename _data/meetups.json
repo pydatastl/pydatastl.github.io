@@ -68,5 +68,19 @@
       "Talk + Q&A",
       "Wrap-up"
     ]
+  },
+  {
+    "title": "How Much Energy Do Pruned LLMs Actually Save?",
+    "date": "2026-07-13",
+    "time": "5:30 PM",
+    "location": "Spark Coworking St. Louis",
+    "description": "As AI models continue to grow in size and capability, concerns about their computational cost and energy consumption have become increasingly important. One popular approach to reducing these costs is pruning, a technique that removes less important components of a neural network to create smaller and potentially more efficient models.",
+    "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/315239846/",
+    "image": "/assets/images/pydatastl.jpg",
+    "agenda": [
+      "Meet & Greet, networking, introductions",
+      "Talk + Q&A",
+      "Wrap-up"
+    ]
   }
 ]
