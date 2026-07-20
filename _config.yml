@@ -31,10 +31,6 @@ github_username:  pydatastl
 logo: "/assets/images/pydata.png"
 
 
-# Google Analytics Tracking
-ga_tracking: G-84WDCHVKH1
-ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
-
 # Aux links for the upper right navigation
 aux_links: null
 
