@@ -6,7 +6,6 @@
     "location": "St Louis County Library Grand Glaize Branch",
     "description": "Randomness powers simulation, cryptography, statistics, and machine learning, but are all sources of randomness the same? In this talk, we’ll explore the difference between: classical randomness (dice, noise, pseudorandom number generators) quantum randomness (measurement, superposition, and qubits) We’ll discuss what “random” really means, how random numbers are generated in practice, and whether quantum mechanics truly produces a deeper kind of randomness than anything classical physics allows. The talk is beginner-friendly and requires no physics background.",
     "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/312686205/",
-    "image": "/assets/images/pydatastl.jpg",
     "agenda": [
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
@@ -20,7 +19,6 @@
     "location": "St. Louis County Library Daniel Boone Branch",
     "description": "Real-world data can be limited, expensive, or restricted by privacy concerns. Synthetic data offers a way to generate realistic datasets that help train and test models when real data isn’t enough.",
     "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/313352419",
-    "image": "/assets/images/pydatastl.jpg",
     "agenda": [
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
@@ -34,7 +32,6 @@
     "location": "Spark Coworking St. Louis",
     "description": "Join us at PyData St. Louis for a talk and community discussion on debunking the myths of Quantum AI and understanding what the technology can realistically do today. Quantum computing and AI are often discussed together, but many claims about “Quantum AI” are misunderstood or exaggerated. This session will explore what quantum computing actually is, where it might intersect with machine learning, and what data scientists should realistically expect from the field.",
     "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/313764006",
-    "image": "/assets/images/pydatastl.jpg",
     "agenda": [
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
@@ -48,7 +45,6 @@
     "location": "Spark Coworking St. Louis",
     "description": "Machine learning is often built on the assumption of clean, high-quality data. In reality, data is messy, incomplete, and noisy. This session explores a powerful idea: introducing controlled corruption during training can improve robustness, reduce overfitting, and help models perform better in real-world conditions.",
     "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/314320971",
-    "image": "/assets/images/pydatastl.jpg",
     "agenda": [
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
@@ -62,7 +58,6 @@
     "location": "Spark Coworking St. Louis",
     "description": "Modern AI systems continue to grow larger and more computationally expensive. This session explores an alternative approach inspired by physics and scientific computing: tensor networks. These techniques can compress neural network representations while preserving much of their performance, offering a possible path toward more efficient AI systems.",
     "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/314762089",
-    "image": "/assets/images/pydatastl.jpg",
     "agenda": [
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
@@ -76,9 +71,22 @@
     "location": "Spark Coworking St. Louis",
     "description": "As AI models continue to grow in size and capability, concerns about their computational cost and energy consumption have become increasingly important. One popular approach to reducing these costs is pruning, a technique that removes less important components of a neural network to create smaller and potentially more efficient models.",
     "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/315239846/",
-    "image": "/assets/images/pydatastl.jpg",
+    "youtube_url": "https://youtu.be/3vh4UA4FOrU",
     "agenda": [
       "Meet & Greet, networking, introductions",
+      "Talk + Q&A",
+      "Wrap-up"
+    ]
+  },
+  {
+    "title": "LLM-Driven Merge Conflict Resolution: From Frustration to Automation",
+    "date": "2026-07-28",
+    "time": "7:00 PM",
+    "location": "Online",
+    "description": "Merge conflicts are an unavoidable part of collaborative software development, often slowing teams down and creating friction during the development process. Recent advances in Large Language Models (LLMs) have opened new possibilities for understanding code context and assisting developers in resolving conflicts more efficiently. In this talk, Advitya Gemawat, ML Engineer at Microsoft, will explore how LLMs can be applied to merge conflict resolution, the challenges involved in understanding code changes across branches, and the opportunities for building intelligent developer tools. Drawing from his experience building machine learning and AI systems at Microsoft, Advitya will discuss practical approaches, current limitations, and the future of AI-assisted software engineering. Whether you're a software engineer, data scientist, researcher, or AI enthusiast, this session will provide valuable insights into how modern AI is transforming the developer experience.",
+    "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/315400168",
+    "agenda": [
+      "6:00 PM – Welcome and introductions",
       "Talk + Q&A",
       "Wrap-up"
     ]

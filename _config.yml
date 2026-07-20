@@ -42,6 +42,11 @@ aux_links: null
 plugins:
   - jekyll-feed
 
+# Preserve the response-header manifest for hosts that support Netlify-style
+# _headers files. GitHub Pages itself does not apply custom response headers.
+include:
+  - _headers
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

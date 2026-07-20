@@ -34,7 +34,10 @@ permalink: /past_meetups/
 					<p>{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
 					{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
 					{% if meetup.description %}<p>{{ meetup.description }}</p>{% endif %}
-					{% if meetup.rsvp_url %}<p><a class="button" href="{{ meetup.rsvp_url }}">Meetup link</a></p>{% endif %}
+					<p class="cta-row">
+						<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
+						{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">Meetup link</a>{% endif %}
+					</p>
 				</div>
 			{% endfor %}
 		</div>

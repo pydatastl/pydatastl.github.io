@@ -48,7 +48,10 @@ permalink: /
 					<p>{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
 					{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
 					{% if meetup.description %}<p>{{ meetup.description }}</p>{% endif %}
-					{% if meetup.rsvp_url %}<p><a class="button" href="{{ meetup.rsvp_url }}">RSVP</a></p>{% endif %}
+					<p class="cta-row">
+						<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
+						{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">RSVP</a>{% endif %}
+					</p>
 				</div>
 			{% endfor %}
 		</div>
@@ -60,7 +63,10 @@ permalink: /
 				<p>{{ next_meetup.date }}{% if next_meetup.time %} · {{ next_meetup.time }}{% endif %}</p>
 				{% if next_meetup.location %}<p>{{ next_meetup.location }}</p>{% endif %}
 				{% if next_meetup.description %}<p>{{ next_meetup.description }}</p>{% endif %}
-				{% if next_meetup.rsvp_url %}<p><a class="button" href="{{ next_meetup.rsvp_url }}">RSVP</a></p>{% endif %}
+				<p class="cta-row">
+					<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ next_meetup.title | slugify }}">Event details</a>
+					{% if next_meetup.rsvp_url %}<a class="button" href="{{ next_meetup.rsvp_url }}">RSVP</a>{% endif %}
+				</p>
 			</div>
 		</div>
 	{% else %}
@@ -98,67 +104,7 @@ permalink: /
 	</div>
 </section>
 
-<script>
-	(function () {
-		var slider = document.querySelector('[data-slider]');
-		var dotsWrap = document.querySelector('[data-dots]');
-		if (!slider || !dotsWrap) return;
-		var slides = slider.querySelectorAll('.slide');
-		var dots = dotsWrap.querySelectorAll('.dot');
-		var prevBtn = document.querySelector('.slider-nav.prev');
-		var nextBtn = document.querySelector('.slider-nav.next');
-		if (slides.length <= 1) {
-			if (prevBtn) prevBtn.style.display = 'none';
-			if (nextBtn) nextBtn.style.display = 'none';
-			return;
-		}
-		var index = 0;
-		var intervalId = null;
-		function updateSlider() {
-			slider.style.transform = 'translateX(' + (-index * 100) + '%)';
-			for (var i = 0; i < dots.length; i += 1) {
-				dots[i].classList.toggle('active', i === index);
-			}
-		}
-		function goTo(nextIndex) {
-			index = (nextIndex + slides.length) % slides.length;
-			updateSlider();
-		}
-		function startAuto() {
-			intervalId = window.setInterval(function () {
-				goTo(index + 1);
-			}, 5000);
-		}
-		function stopAuto() {
-			if (intervalId) window.clearInterval(intervalId);
-		}
-		if (prevBtn) {
-			prevBtn.addEventListener('click', function () {
-				stopAuto();
-				goTo(index - 1);
-				startAuto();
-			});
-		}
-		if (nextBtn) {
-			nextBtn.addEventListener('click', function () {
-				stopAuto();
-				goTo(index + 1);
-				startAuto();
-			});
-		}
-		for (var j = 0; j < dots.length; j += 1) {
-			(function (dotIndex) {
-				dots[dotIndex].addEventListener('click', function () {
-					stopAuto();
-					goTo(dotIndex);
-					startAuto();
-				});
-			})(j);
-		}
-		updateSlider();
-		startAuto();
-	})();
-</script>
+<script src="{{ '/assets/js/slider.js' | relative_url }}"></script>
 
 <section class="meetups-section">
 	<p class="acm-badge">Our mission</p>
@@ -176,4 +122,3 @@ permalink: /
 		</article>
 	</div>
 </section>
-

@@ -122,13 +122,16 @@ body {
 
 .slider {
   display: flex;
-  transition: transform 0.45s ease;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 .slide {
   min-width: 100%;
   aspect-ratio: 16 / 8;
   background: var(--surface-strong);
+  scroll-snap-align: start;
 }
 
 .slide img {
@@ -173,6 +176,43 @@ body {
 
 .dot.active {
   background: var(--paper);
+}
+
+.event-detail-page {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.event-detail-page[hidden] {
+  display: none;
+}
+
+.event-detail-copy,
+.event-media {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.event-media h2 {
+  margin-top: 0;
+}
+
+.video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+  border-radius: 0.4rem;
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
 
 .sponsors-section,

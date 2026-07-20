@@ -1,0 +1,82 @@
+---
+layout: default
+title: Event details
+description: PyData STL meetup details, recordings, and photos.
+permalink: /event/
+---
+
+<div data-event-not-found hidden>
+  <section class="hero">
+    <p class="eyebrow">Event</p>
+    <h1>Event not found</h1>
+    <p class="lede">This event may have moved or the link may be incomplete.</p>
+    <p><a class="button" href="{{ '/past_meetups/' | relative_url }}">Browse past meetups</a></p>
+  </section>
+</div>
+
+{% for meetup in site.data.meetups %}
+  {% assign event_id = meetup.title | slugify %}
+  <article class="event-detail-page" data-event-detail="{{ event_id }}" hidden>
+    <section class="hero">
+      <p class="eyebrow">PyData STL event</p>
+      <h1>{{ meetup.title | escape }}</h1>
+      <p class="lede">{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
+      {% if meetup.location %}<p>{{ meetup.location | escape }}</p>{% endif %}
+    </section>
+
+    {% if meetup.youtube_url %}
+      <section class="event-media" data-youtube-url="{{ meetup.youtube_url | escape }}">
+        <h2>Recording</h2>
+        <div class="video-frame" data-youtube-frame></div>
+      </section>
+    {% else %}
+      {% assign event_images = "" | split: "" %}
+      {% if meetup.photo_directory %}
+        {% for file in site.static_files %}
+          {% if file.path contains meetup.photo_directory %}
+            {% assign extension = file.extname | downcase %}
+            {% if extension == '.jpg' or extension == '.jpeg' or extension == '.png' or extension == '.webp' or extension == '.gif' %}
+              {% assign event_images = event_images | push: file %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% assign event_images = event_images | sort: "path" %}
+      <section class="event-media">
+        <h2>Event photos</h2>
+        {% if event_images.size > 0 %}
+          <div class="slider-container" data-event-slider>
+            <div class="slider">
+              {% for image in event_images %}
+                <div class="slide"><img src="{{ image.path | relative_url }}" alt="{{ meetup.title | escape }} photo {{ forloop.index }}"></div>
+              {% endfor %}
+            </div>
+            <button class="slider-nav prev" type="button" aria-label="Previous photo">&#x2039;</button>
+            <button class="slider-nav next" type="button" aria-label="Next photo">&#x203A;</button>
+            <div class="slider-dots">
+              {% for image in event_images %}<button class="dot{% if forloop.first %} active{% endif %}" type="button" aria-label="Go to photo {{ forloop.index }}"></button>{% endfor %}
+            </div>
+          </div>
+        {% else %}
+          <p>No event photos have been added yet.</p>
+        {% endif %}
+      </section>
+    {% endif %}
+
+    <section class="meetups-section event-detail-copy">
+      {% if meetup.description %}<p class="lede">{{ meetup.description | escape }}</p>{% endif %}
+      {% if meetup.agenda %}
+        <h2>Agenda</h2>
+        <ul>
+          {% for item in meetup.agenda %}<li>{{ item | escape }}</li>{% endfor %}
+        </ul>
+      {% endif %}
+      <p class="cta-row">
+        {% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}" target="_blank" rel="noopener noreferrer">View on Meetup</a>{% endif %}
+        {% if meetup.youtube_url %}<a class="button primary" href="{{ meetup.youtube_url }}" target="_blank" rel="noopener noreferrer">Open on YouTube</a>{% endif %}
+      </p>
+    </section>
+  </article>
+{% endfor %}
+
+<script src="{{ '/assets/js/event-detail.js' | relative_url }}"></script>
