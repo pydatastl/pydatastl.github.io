@@ -19,8 +19,10 @@ Add optional `youtube_url` and `photo_directory` properties to a meetup in
 ```
 
 Every meetup has an **Event details** page. When `youtube_url` is present, that
-page embeds the recording using YouTube's privacy-enhanced player. Otherwise it
-creates a photo slider from supported image files in `photo_directory`. Omit
+page embeds the recording using YouTube's privacy-enhanced player. When
+`photo_directory` contains supported image files, it also creates a photo
+slider. With a recording, the slider appears after the event description;
+without a recording, it appears between the title and description. Omit
 `youtube_url` when no recording is available, and keep each event's photos in
 its own directory. The first filename alphabetically is the initial photo, so
 use names such as `01-cover.jpg`, `02-speaker.jpg`, and `03-audience.jpg` to

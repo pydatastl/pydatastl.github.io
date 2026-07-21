@@ -14,7 +14,8 @@
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
       "Wrap-up"
-    ]
+    ],
+  "photo_directory": "/assets/images/meetups/quantumvsclassicalrandomness"
   },
   {
     "title": "The Hidden Power of Synthetic Data: Teaching Models What Real Data Can’t",
@@ -47,7 +48,8 @@
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
       "Wrap-up"
-    ]
+    ], 
+    "photo_directory": "/assets/images/meetups/debunking"
   },
   {
     "title": "Embracing Noise: How Data Corruption Can Make Models Smarter",
@@ -63,7 +65,8 @@
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
       "Wrap-up"
-    ]
+    ],
+    "photo_directory": "/assets/images/meetups/embracingnoise"
   },
   {
     "title": "Efficient Neural Networks Through Tensor Networks",
@@ -80,7 +83,8 @@
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
       "Wrap-up"
-    ]
+    ],
+    "photo_directory": "/assets/images/meetups/efficientneuralnetworksthroughtensornetworks"
   },
   {
     "title": "How Much Energy Do Pruned LLMs Actually Save?",
@@ -97,7 +101,8 @@
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
       "Wrap-up"
-    ]
+    ], 
+    "photo_directory": "/assets/images/meetups/howmuchenergydoprunedllmsactuallysave"
   },
   {
     "title": "LLM-Driven Merge Conflict Resolution: From Frustration to Automation",
@@ -115,6 +120,7 @@
       "6:00 PM – Welcome and introductions",
       "Talk + Q&A",
       "Wrap-up"
-    ]
+    ],
+    "photo_directory": "/assets/images/meetups/llmdrivenmergeconflict"
   }
 ]

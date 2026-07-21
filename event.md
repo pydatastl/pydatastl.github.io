@@ -18,49 +18,32 @@ permalink: /event/
   {% assign event_id = meetup.title | slugify %}
   <article class="event-detail-page" data-event-detail="{{ event_id }}" hidden>
     <section class="hero">
-      <p class="eyebrow">PyData STL event</p>
+      <p class="eyebrow">Event</p>
       <h1>{{ meetup.title | escape }}</h1>
       <p class="lede">{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
       {% if meetup.location %}<p>{{ meetup.location | escape }}</p>{% endif %}
     </section>
+
+    {% assign event_images = "" | split: "" %}
+    {% if meetup.photo_directory %}
+      {% for file in site.static_files %}
+        {% if file.path contains meetup.photo_directory %}
+          {% assign extension = file.extname | downcase %}
+          {% if extension == '.jpg' or extension == '.jpeg' or extension == '.png' or extension == '.webp' or extension == '.gif' %}
+            {% assign event_images = event_images | push: file %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% assign event_images = event_images | sort: "path" %}
 
     {% if meetup.youtube_url %}
       <section class="event-media" data-youtube-url="{{ meetup.youtube_url | escape }}">
         <h2>Recording</h2>
         <div class="video-frame" data-youtube-frame></div>
       </section>
-    {% else %}
-      {% assign event_images = "" | split: "" %}
-      {% if meetup.photo_directory %}
-        {% for file in site.static_files %}
-          {% if file.path contains meetup.photo_directory %}
-            {% assign extension = file.extname | downcase %}
-            {% if extension == '.jpg' or extension == '.jpeg' or extension == '.png' or extension == '.webp' or extension == '.gif' %}
-              {% assign event_images = event_images | push: file %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-      {% assign event_images = event_images | sort: "path" %}
-      <section class="event-media">
-        <h2>Event photos</h2>
-        {% if event_images.size > 0 %}
-          <div class="slider-container" data-event-slider>
-            <div class="slider">
-              {% for image in event_images %}
-                <div class="slide"><img src="{{ image.path | relative_url }}" alt="{{ meetup.title | escape }} photo {{ forloop.index }}"></div>
-              {% endfor %}
-            </div>
-            <button class="slider-nav prev" type="button" aria-label="Previous photo">&#x2039;</button>
-            <button class="slider-nav next" type="button" aria-label="Next photo">&#x203A;</button>
-            <div class="slider-dots">
-              {% for image in event_images %}<button class="dot{% if forloop.first %} active{% endif %}" type="button" aria-label="Go to photo {{ forloop.index }}"></button>{% endfor %}
-            </div>
-          </div>
-        {% else %}
-          <p>No event photos have been added yet.</p>
-        {% endif %}
-      </section>
+    {% elsif event_images.size > 0 %}
+      {% include event_photos.html %}
     {% endif %}
 
     <section class="meetups-section event-detail-copy">
@@ -79,6 +62,10 @@ permalink: /event/
         {% if meetup.youtube_url %}<a class="button primary" href="{{ meetup.youtube_url }}" target="_blank" rel="noopener noreferrer">Open on YouTube</a>{% endif %}
       </p>
     </section>
+
+    {% if meetup.youtube_url and event_images.size > 0 %}
+      {% include event_photos.html %}
+    {% endif %}
   </article>
 {% endfor %}
 
