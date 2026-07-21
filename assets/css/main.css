@@ -187,6 +187,65 @@ body {
   display: none;
 }
 
+.organizers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.organizer-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 1rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.organizer-initial,
+.organizer-photo {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+
+.organizer-photo {
+  display: block;
+  object-fit: cover;
+  border: 2px solid var(--line);
+}
+
+.organizer-initial {
+  display: grid;
+  place-items: center;
+  background: var(--acm);
+  color: var(--paper);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.organizer-body h2 {
+  margin: 0;
+}
+
+.organizer-position {
+  margin: 0.25rem 0 0.8rem;
+  color: var(--acm-deep);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.organizer-body p:last-child {
+  margin-bottom: 0;
+}
+
 .event-detail-copy,
 .event-media {
   border: 1px solid var(--line);

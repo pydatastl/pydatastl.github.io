@@ -9,7 +9,7 @@ permalink: /past_meetups/
 
 <section class="hero">
 	<p class="eyebrow">Archive</p>
-	<h1>Past PyData STL Meetups</h1>
+	<h1>Past Meetups</h1>
 	<p class="lede">Browse previous meetups, agendas, and notes.</p>
 </section>
 

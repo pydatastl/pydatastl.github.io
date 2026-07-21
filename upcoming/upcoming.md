@@ -9,7 +9,7 @@ permalink: /upcoming_meetups/
 
 <section class="hero">
 	<p class="eyebrow">Upcoming</p>
-	<h1>Upcoming PyData STL Meetups</h1>
+	<h1>Upcoming Meetups</h1>
 	<p class="lede">See what is on the calendar and RSVP to join us.</p>
 </section>
 

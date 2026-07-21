@@ -8,7 +8,7 @@ permalink: /sponsors/
 
 <section class="hero">
   <p class="eyebrow">Sponsors</p>
-  <h1>PyData STL Sponsors</h1>
+  <h1>Sponsors</h1>
   <p class="lede">Organizations supporting our community through sponsorships and partnerships.</p>
 </section>
 

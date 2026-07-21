@@ -25,3 +25,24 @@ creates a photo slider from supported image files in `photo_directory`. Omit
 its own directory. The first filename alphabetically is the initial photo, so
 use names such as `01-cover.jpg`, `02-speaker.jpg`, and `03-audience.jpg` to
 control the order. A separate `image` property is not needed.
+
+## Adding an organizer
+
+Add organizer profiles to `_data/organizers.json`:
+
+```json
+{
+  "name": "Organizer name",
+  "position": "Organizer position",
+  "photo": "/assets/images/organizers/organizer-name.jpg",
+  "description": [
+    "The first paragraph about this organizer.",
+    "An optional second paragraph."
+  ]
+}
+```
+
+The Organizers page is generated from this file and appears in the site
+navigation automatically. The `photo` field is optional; when it is omitted,
+the card displays the organizer's first initial. Store organizer photos under
+`assets/images/organizers/`.

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Aayush Gauba",
+    "position": "Chair",
+    "description": [
+      "Aayush Gauba is an AI researcher, cybersecurity developer, and open-source contributor whose work spans artificial intelligence, quantum computing, and theoretical computer science, and he has presented at conferences including PyCon US, DjangoCon US, and PyData. He also organizes PyData St. Louis and is passionate about building practical AI systems and growing the open-source community."
+    ],
+    "photo": "/assets/images/organizers/aayush.jpeg"
+  },
+  {
+    "name": "Sai Sriram Dubasi",
+    "position": "Marketing Chair",
+    "description": [
+      "Sai Sriram Dubasi holds an M.S. in Data Analytics Engineering and has a strong technical foundation combined with a genuine curiosity about how businesses operate. He is passionate about solving problems, optimizing processes, and collaborating with others to create meaningful impact."
+    ],
+    "photo": "/assets/images/organizers/sai.jpeg"
+  }
+]
