@@ -35,7 +35,7 @@ permalink: /upcoming_meetups/
 					<h2>{{ meetup.title }}</h2>
 					<p>{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
 					{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
-					{% if meetup.description %}<p>{{ meetup.description }}</p>{% endif %}
+					{% if meetup.description %}{% for paragraph in meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
 					<p class="cta-row">
 						<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
 						{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">RSVP</a>{% endif %}

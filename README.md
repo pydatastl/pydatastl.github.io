@@ -9,6 +9,10 @@ Add optional `youtube_url` and `photo_directory` properties to a meetup in
 {
   "title": "Example meetup",
   "date": "2026-01-01",
+  "description": [
+    "The first paragraph of the event description.",
+    "The second paragraph of the event description."
+  ],
   "youtube_url": "https://www.youtube.com/watch?v=VIDEO_ID",
   "photo_directory": "/assets/images/meetup/example-meetup/"
 }

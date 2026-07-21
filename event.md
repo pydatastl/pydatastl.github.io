@@ -64,7 +64,10 @@ permalink: /event/
     {% endif %}
 
     <section class="meetups-section event-detail-copy">
-      {% if meetup.description %}<p class="lede">{{ meetup.description | escape }}</p>{% endif %}
+      {% if meetup.description %}
+        <h2>About this event</h2>
+        {% for paragraph in meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}
+      {% endif %}
       {% if meetup.agenda %}
         <h2>Agenda</h2>
         <ul>

@@ -47,7 +47,7 @@ permalink: /
 					<h2>{{ meetup.title }}</h2>
 					<p>{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
 					{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
-					{% if meetup.description %}<p>{{ meetup.description }}</p>{% endif %}
+					{% if meetup.description %}{% for paragraph in meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
 					<p class="cta-row">
 						<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
 						{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">RSVP</a>{% endif %}
@@ -62,7 +62,7 @@ permalink: /
 				<h2>{{ next_meetup.title }}</h2>
 				<p>{{ next_meetup.date }}{% if next_meetup.time %} · {{ next_meetup.time }}{% endif %}</p>
 				{% if next_meetup.location %}<p>{{ next_meetup.location }}</p>{% endif %}
-				{% if next_meetup.description %}<p>{{ next_meetup.description }}</p>{% endif %}
+				{% if next_meetup.description %}{% for paragraph in next_meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
 				<p class="cta-row">
 					<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ next_meetup.title | slugify }}">Event details</a>
 					{% if next_meetup.rsvp_url %}<a class="button" href="{{ next_meetup.rsvp_url }}">RSVP</a>{% endif %}
