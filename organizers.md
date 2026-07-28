@@ -13,7 +13,7 @@ permalink: /organizers/
 </section>
 
 <section class="meetups-section">
-  {% assign organizers = site.data.organizers | sort: "name" %}
+  {% assign organizers = site.data.organizers %}
   {% if organizers.size > 0 %}
     <div class="organizers-grid">
       {% for organizer in organizers %}

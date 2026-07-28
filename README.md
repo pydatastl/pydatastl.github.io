@@ -44,7 +44,8 @@ Add organizer profiles to `_data/organizers.json`:
 }
 ```
 
-The Organizers page is generated from this file and appears in the site
-navigation automatically. The `photo` field is optional; when it is omitted,
-the card displays the organizer's first initial. Store organizer photos under
+The Organizers page is generated from this file, preserves the order of the
+profiles in the JSON array, and appears in the site navigation automatically.
+The `photo` field is optional; when it is omitted, the card displays the
+organizer's first initial. Store organizer photos under
 `assets/images/organizers/`.
