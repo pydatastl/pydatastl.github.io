@@ -117,10 +117,11 @@
     ],
     "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/315400168",
     "agenda": [
-      "6:00 PM – Welcome and introductions",
+      "7:00 PM – Welcome and introductions",
       "Talk + Q&A",
       "Wrap-up"
     ],
+    "youtube_url": "https://youtu.be/3vh4UA4FOrU",
     "photo_directory": "/assets/images/meetups/llmdrivenmergeconflict"
   }
 ]
