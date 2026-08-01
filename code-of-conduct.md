@@ -12,6 +12,8 @@ permalink: /code-of-conduct/
 	<p class="lede">PyData St. Louis is committed to a welcoming, inclusive, accessible, and professionally respectful community where people can learn and collaborate safely.</p>
 </section>
 
+<section class="meetups-section code-of-conduct-section" markdown="1">
+
 **Version:** 1.0  
 **Effective date:** August 1, 2026  
 **Last reviewed:** August 1, 2026  
@@ -183,3 +185,5 @@ Disagreement with the outcome, repetition of arguments already considered, attac
 This policy will be reviewed at least annually and when NumFOCUS materially changes its Code of Conduct or reporting procedures. Substantive updates will include a new effective date and will not retroactively expand prohibited conduct, although current safety measures may address an ongoing risk.
 
 This local policy is informed by the NumFOCUS Code of Conduct and response guidance and by community practices from the Python Software Foundation, PyCon US, Kubernetes, CNCF, Mozilla, Microsoft Open Source, DjangoCon, and the Linux kernel community.
+
+</section>

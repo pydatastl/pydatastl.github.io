@@ -296,6 +296,27 @@ body {
   padding: 1.3rem;
 }
 
+.code-of-conduct-section {
+  margin-top: 1.4rem;
+}
+
+.code-of-conduct-section h2 {
+  margin-top: 1.7rem;
+}
+
+.code-of-conduct-section h2:first-of-type {
+  margin-top: 1.3rem;
+}
+
+.code-of-conduct-section h3 {
+  margin-top: 1.35rem;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.code-of-conduct-section li + li {
+  margin-top: 0.35rem;
+}
+
 .acm-badge {
   margin: 0 0 0.7rem;
   font-family: 'IBM Plex Mono', monospace;
