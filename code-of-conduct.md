@@ -12,6 +12,10 @@ permalink: /code-of-conduct/
 	<p class="lede">PyData St. Louis is committed to a welcoming, inclusive, accessible, and professionally respectful community where people can learn and collaborate safely.</p>
 </section>
 
+<figure class="code-of-conduct-banner">
+	<img src="{{ '/assets/images/ccc.png' | relative_url }}" alt="" aria-hidden="true">
+</figure>
+
 <section class="meetups-section code-of-conduct-section" markdown="1">
 
 **Version:** 1.0  

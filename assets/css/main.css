@@ -300,6 +300,21 @@ body {
   margin-top: 1.4rem;
 }
 
+.code-of-conduct-banner {
+  margin: 1.4rem 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+}
+
+.code-of-conduct-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .code-of-conduct-section h2 {
   margin-top: 1.7rem;
 }
