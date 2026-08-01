@@ -1,4 +1,4 @@
-# PyData STL Website
+# PyData St. Louis Website
 
 ## Adding a past-meetup recording
 

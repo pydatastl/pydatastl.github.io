@@ -1,7 +1,7 @@
 ---
 layout: default
 title: upcoming meetups
-description: List of Upcoming PyData STL
+description: List of Upcoming PyData St. Louis meetups
 nav_order: 3
 has_children: true
 permalink: /upcoming_meetups/

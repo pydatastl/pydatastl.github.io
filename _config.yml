@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: PyData STL
+title: PyData St. Louis
 email: gauba.aayush@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A community for developers and users of open source data tools.

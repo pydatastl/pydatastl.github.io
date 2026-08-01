@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sponsors
-description: Sponsors supporting the PyData STL community.
+description: Sponsors supporting the PyData St. Louis community.
 nav_order: 4
 permalink: /sponsors/
 ---

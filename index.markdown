@@ -5,14 +5,14 @@
 layout: default
 title: home
 nav_order: 1
-description: PyData STL is a community for developers and users of open source data tools.
+description: PyData St. Louis is a community for developers and users of open source data tools.
 permalink: /
 
 ---
 
 <section class="hero">
 	<p class="eyebrow">Community-led data talks</p>
-	<h1>PyData STL</h1>
+	<h1>PyData St. Louis</h1>
 	<p class="lede">A community for developers and users of open source data tools.</p>
 	<div class="cta-row">
 		<a class="button primary" href="https://forms.gle/7moSKLvQjrFRuYtCA">Propose a Talk or Tutorial</a>
@@ -81,12 +81,12 @@ permalink: /
 			{% if meetup_images.size > 0 %}
 				{% for image in meetup_images %}
 					<div class="slide">
-						<img src="{{ image.path | relative_url }}" alt="PyData STL meetup photo {{ forloop.index }}">
+						<img src="{{ image.path | relative_url }}" alt="PyData St. Louis meetup photo {{ forloop.index }}">
 					</div>
 				{% endfor %}
 			{% else %}
 				<div class="slide">
-					<img src="/assets/images/pydatastl.jpg" alt="PyData STL community photo">
+					<img src="/assets/images/pydatastl.jpg" alt="PyData St. Louis community photo">
 				</div>
 			{% endif %}
 		</div>
@@ -111,7 +111,7 @@ permalink: /
 	<p class="lede">PyData is an educational program of NumFOCUS, a 501(c)3 nonprofit. We bring the global PyData network to St. Louis with accessible, community-driven meetups and workshops for data practitioners at every level.</p>
 	<div class="event-grid">
 		<article>
-			<h2>Speaking at PyData STL</h2>
+			<h2>Speaking at PyData St. Louis</h2>
 			<p>Share a talk, tutorial, or lightning talk about open-source tools, data engineering, visualization, computer vision, or NLP.</p>
 			<p><a class="button" href="https://forms.gle/7moSKLvQjrFRuYtCA">Submit your idea</a></p>
 		</article>

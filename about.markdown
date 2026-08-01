@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <section class="hero">
-	<p class="eyebrow">About PyData STL</p>
+	<p class="eyebrow">About PyData St. Louis</p>
 	<h1>Built by the community</h1>
 	<p class="lede">PyData is an educational program of NumFOCUS, a 501(c)3 nonprofit. We provide a forum for the international community of data tool users and developers to share ideas, learn together, and explore emerging approaches to data management, processing, analytics, and visualization.</p>
 </section>
@@ -18,7 +18,7 @@ permalink: /about/
 		</article>
 		<article>
 			<h2>Code of Conduct</h2>
-			<p>The <a href="https://pydata.org/code-of-conduct/">PyData Code of Conduct</a> governs this meetup. To discuss any issues or concerns, contact <a href="mailto:stl@pydata.org">stl@pydata.org</a>.</p>
+			<p>Our <a href="{{ '/code-of-conduct/' | relative_url }}">Code of Conduct and community response policy</a> explains the standards for PyData St. Louis spaces and how to report a concern. Concerns can be submitted through the <a href="https://forms.gle/v9GsAzTSJWyJiG1F9">Code of Conduct reporting form</a>.</p>
 		</article>
 	</div>
 </section>

@@ -19,7 +19,7 @@
   }
 
   active.hidden = false;
-  document.title = active.querySelector('h1').textContent + ' | PyData STL';
+  document.title = active.querySelector('h1').textContent + ' | PyData St. Louis';
 
   function youtubeEmbedUrl(rawUrl) {
     try {

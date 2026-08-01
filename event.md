@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Event details
-description: PyData STL meetup details, recordings, and photos.
+description: PyData St. Louis meetup details, recordings, and photos.
 permalink: /event/
 ---
 

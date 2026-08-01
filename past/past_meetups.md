@@ -1,7 +1,7 @@
 ---
 layout: default
 title: past meetups
-description: List of Past PyData STL
+description: List of Past PyData St. Louis meetups
 nav_order: 2
 has_children: true
 permalink: /past_meetups/
