@@ -25,9 +25,13 @@ permalink: /code-of-conduct/
 **Response contacts:** [PyData St. Louis organizers]({{ '/organizers/' | relative_url }})  
 **Governing policy and direct reporting route:** [NumFOCUS Code of Conduct](https://numfocus.org/code-of-conduct)
 
-## Join the team
+## Community and Code of Conduct Team
 
-If you would like to support a welcoming and inclusive PyData St. Louis community, [apply to join our Community and Code of Conduct Team](https://forms.gle/EPCm21csdgvqKnMV7). Team members help strengthen community participation, accessibility, and the fair handling of conduct concerns.
+The Community and Code of Conduct Team advises PyData St. Louis organizers on ways to promote diversity and inclusivity at our events. The team suggests practical improvements that help people from different backgrounds, identities, abilities, and experience levels feel welcome and able to participate.
+
+If you would like to help make PyData St. Louis events more diverse, inclusive, and accessible, [apply to join the Community and Code of Conduct Team](https://forms.gle/EPCm21csdgvqKnMV7).
+
+Conduct concerns should be submitted through the [Code of Conduct reporting form](https://forms.gle/v9GsAzTSJWyJiG1F9), not the team application form.
 
 ## Purpose and governing policy
 
