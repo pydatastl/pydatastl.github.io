@@ -63,6 +63,42 @@ permalink: /event/
       </p>
     </section>
 
+    {% if meetup.speakers and meetup.speakers.size > 0 %}
+      <section class="meetups-section event-speakers">
+        <h2>{% if meetup.speakers.size == 1 %}Speaker{% else %}Speakers{% endif %}</h2>
+        <div class="speaker-grid">
+          {% for speaker in meetup.speakers %}
+            <article class="speaker-card">
+              {% if speaker.photo %}
+                <img class="speaker-photo" src="{{ speaker.photo | relative_url }}" alt="{{ speaker.name | escape }}">
+              {% else %}
+                <div class="speaker-initial" aria-hidden="true">{{ speaker.name | slice: 0 | upcase }}</div>
+              {% endif %}
+              <div class="speaker-body">
+                <h3>{{ speaker.name | escape }}</h3>
+                {% if speaker.description %}
+                  {% if speaker.description.first %}
+                    {% for paragraph in speaker.description %}<p>{{ paragraph | escape }}</p>{% endfor %}
+                  {% else %}
+                    <p>{{ speaker.description | escape }}</p>
+                  {% endif %}
+                {% endif %}
+                {% if speaker.social %}
+                  <div class="speaker-socials" aria-label="{{ speaker.name | escape }} social media profiles">
+                    {% if speaker.social.linkedin %}<a href="{{ speaker.social.linkedin | escape }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{% endif %}
+                    {% if speaker.social.mastodon %}<a href="{{ speaker.social.mastodon | escape }}" target="_blank" rel="me noopener noreferrer">Mastodon</a>{% endif %}
+                    {% if speaker.social.bluesky %}<a href="{{ speaker.social.bluesky | escape }}" target="_blank" rel="me noopener noreferrer">Bluesky</a>{% endif %}
+                    {% if speaker.social.x %}<a href="{{ speaker.social.x | escape }}" target="_blank" rel="me noopener noreferrer">X</a>{% endif %}
+                    {% if speaker.social.youtube %}<a href="{{ speaker.social.youtube | escape }}" target="_blank" rel="noopener noreferrer">YouTube</a>{% endif %}
+                  </div>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
     {% if meetup.youtube_url and event_images.size > 0 %}
       {% include event_photos.html %}
     {% endif %}

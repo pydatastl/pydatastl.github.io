@@ -28,6 +28,36 @@ its own directory. The first filename alphabetically is the initial photo, so
 use names such as `01-cover.jpg`, `02-speaker.jpg`, and `03-audience.jpg` to
 control the order. A separate `image` property is not needed.
 
+### Adding speaker profiles
+
+Add an optional `speakers` array to a meetup to show speaker information on its
+Event details page. Multiple speakers are supported. Each social media property
+is optional, so include only the profiles the speaker has:
+
+```json
+"speakers": [
+  {
+    "name": "Speaker name",
+    "photo": "/assets/images/speakers/speaker-name.jpg",
+    "description": [
+      "A short biography or introduction.",
+      "An optional second paragraph."
+    ],
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/example/",
+      "mastodon": "https://mastodon.social/@example",
+      "bluesky": "https://bsky.app/profile/example.bsky.social",
+      "x": "https://x.com/example",
+      "youtube": "https://www.youtube.com/@example"
+    }
+  }
+]
+```
+
+Store speaker photos under `assets/images/speakers/`. If a photo is omitted,
+the speaker's first initial is displayed instead. `description` may be either a
+single string or an array of paragraphs.
+
 ## Adding an organizer
 
 Add organizer profiles to `_data/organizers.json`:
