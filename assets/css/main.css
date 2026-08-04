@@ -286,6 +286,10 @@ body {
   gap: 1rem;
 }
 
+.speaker-grid-single {
+  grid-template-columns: 1fr;
+}
+
 .speaker-card {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
