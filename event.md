@@ -85,6 +85,7 @@ permalink: /event/
                 {% endif %}
                 {% if speaker.social %}
                   <div class="speaker-socials" aria-label="{{ speaker.name | escape }} social media profiles">
+                    {% if speaker.social.github %}<a href="{{ speaker.social.github | escape }}" target="_blank" rel="me noopener noreferrer">GitHub</a>{% endif %}
                     {% if speaker.social.linkedin %}<a href="{{ speaker.social.linkedin | escape }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{% endif %}
                     {% if speaker.social.mastodon %}<a href="{{ speaker.social.mastodon | escape }}" target="_blank" rel="me noopener noreferrer">Mastodon</a>{% endif %}
                     {% if speaker.social.bluesky %}<a href="{{ speaker.social.bluesky | escape }}" target="_blank" rel="me noopener noreferrer">Bluesky</a>{% endif %}

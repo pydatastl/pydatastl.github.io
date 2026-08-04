@@ -40,10 +40,10 @@ is optional, so include only the profiles the speaker has:
     "name": "Speaker name",
     "photo": "/assets/images/speakers/speaker-name.jpg",
     "description": [
-      "A short biography or introduction.",
-      "An optional second paragraph."
+      "Advitya Gemawat is an ML Engineer at Microsoft, specializing in scalable machine learning systems and Responsible AI (RAI). He has authored publications and received awards from leading venues such as VLDB, ACM SIGMOD, and CIDR. At Microsoft, Advitya has worked with Azure Edge & Platform, Gray Systems Lab, and Windows, building ML and LLM services to enhance developer productivity. He also developed Azure ML’s RAI tooling for computer vision models and Azure OpenAI Evaluations, all of which were released at Microsoft Build (2023– 2025). Previously, at VMware, he expanded deep learning features in Apache MADlib. He was a technical reviewer of the Amazon bestseller 'Ace the Data Science Interview' book and was recognized as a “25 under 25: Top Data Science Contributor & Thought Leader.” He is also a keynote speaker at technology panels and podcasts.",
     ],
     "social": {
+      "github": "https://github.com/example",
       "linkedin": "https://www.linkedin.com/in/example/",
       "mastodon": "https://mastodon.social/@example",
       "bluesky": "https://bsky.app/profile/example.bsky.social",
