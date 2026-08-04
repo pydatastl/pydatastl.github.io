@@ -152,6 +152,14 @@
       "Meet & Greet, networking, introductions",
       "Talk + Q&A",
       "Wrap-up"
+    ],
+    "speakers": [
+      {
+        "name": "Kevin Lai",
+        "description": [
+          "Kevin Lai is a Software Developer for Xcellent Technology Solutions and an organizer for PySTL."
+        ]
+      }
     ] 
   }
 ]
