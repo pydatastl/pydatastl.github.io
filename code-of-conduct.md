@@ -22,16 +22,19 @@ permalink: /code-of-conduct/
 **Effective date:** August 1, 2026  
 **Last reviewed:** August 1, 2026  
 **Reporting form:** [Submit a Code of Conduct report](https://forms.gle/v9GsAzTSJWyJiG1F9)  
+**General feedback form:** [Share general feedback with PyData St. Louis](https://forms.gle/3nvmcK5iBzZzQgsj8)  
 **Response contacts:** [PyData St. Louis organizers]({{ '/organizers/' | relative_url }})  
 **Governing policy and direct reporting route:** [NumFOCUS Code of Conduct](https://numfocus.org/code-of-conduct)
 
 ## Community and Code of Conduct Team
 
-The Community and Code of Conduct Team advises PyData St. Louis organizers on ways to promote diversity and inclusivity at our events. The team suggests practical improvements that help people from different backgrounds, identities, abilities, and experience levels feel welcome and able to participate.
+The Community and Code of Conduct Team regularly reviews submissions from the general feedback form and advises PyData St. Louis organizers on ways to improve the community, including promoting diversity and inclusivity at our events. The team suggests practical improvements that help people from different backgrounds, identities, abilities, and experience levels feel welcome and able to participate.
 
 If you would like to help make PyData St. Louis events more diverse, inclusive, and accessible, [apply to join the Community and Code of Conduct Team](https://forms.gle/EPCm21csdgvqKnMV7).
 
-Conduct concerns should be submitted through the [Code of Conduct reporting form](https://forms.gle/v9GsAzTSJWyJiG1F9), not the team application form.
+Suggestions, event ideas, and other general comments can be shared through the [general feedback form](https://forms.gle/3nvmcK5iBzZzQgsj8).
+
+Conduct concerns should be submitted through the [Code of Conduct reporting form](https://forms.gle/v9GsAzTSJWyJiG1F9), not the team application or general feedback form.
 
 ## Purpose and governing policy
 
