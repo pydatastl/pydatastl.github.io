@@ -123,5 +123,20 @@
     ],
     "youtube_url": "https://youtu.be/zgUJqwZXS1Q",
     "photo_directory": "/assets/images/meetups/llmdrivenmergeconflict"
+  },
+  {
+    "title": "Processing Async Jobs in Django",
+    "date": "2026-08-11",
+    "time": "5:30 PM",
+    "location": "Spark Coworking St. Louis",
+    "description": [
+      "Modern Python applications often need to handle work that shouldn't block user requests, from sending emails and processing files to running long-running background jobs. Celery has become one of the most widely used tools for building scalable asynchronous systems, but designing these systems comes with important architectural decisions and trade-offs."
+    ],
+    "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/315908762",
+    "agenda": [
+      "Meet & Greet, networking, introductions",
+      "Talk + Q&A",
+      "Wrap-up"
+    ] 
   }
 ]
