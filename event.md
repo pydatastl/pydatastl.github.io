@@ -85,12 +85,12 @@ permalink: /event/
                 {% endif %}
                 {% if speaker.social %}
                   <div class="speaker-socials" aria-label="{{ speaker.name | escape }} social media profiles">
-                    {% if speaker.social.github %}<a href="{{ speaker.social.github | escape }}" target="_blank" rel="me noopener noreferrer">GitHub</a>{% endif %}
-                    {% if speaker.social.linkedin %}<a href="{{ speaker.social.linkedin | escape }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{% endif %}
-                    {% if speaker.social.mastodon %}<a href="{{ speaker.social.mastodon | escape }}" target="_blank" rel="me noopener noreferrer">Mastodon</a>{% endif %}
-                    {% if speaker.social.bluesky %}<a href="{{ speaker.social.bluesky | escape }}" target="_blank" rel="me noopener noreferrer">Bluesky</a>{% endif %}
-                    {% if speaker.social.x %}<a href="{{ speaker.social.x | escape }}" target="_blank" rel="me noopener noreferrer">X</a>{% endif %}
-                    {% if speaker.social.youtube %}<a href="{{ speaker.social.youtube | escape }}" target="_blank" rel="noopener noreferrer">YouTube</a>{% endif %}
+                    {% if speaker.social.github %}<a href="{{ speaker.social.github | escape }}" target="_blank" rel="me noopener noreferrer" aria-label="{{ speaker.name | escape }} on GitHub" title="GitHub"><img src="{{ '/assets/images/github.svg' | relative_url }}" alt=""></a>{% endif %}
+                    {% if speaker.social.linkedin %}<a href="{{ speaker.social.linkedin | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ speaker.name | escape }} on LinkedIn" title="LinkedIn"><img src="{{ '/assets/images/linkedin.png' | relative_url }}" alt=""></a>{% endif %}
+                    {% if speaker.social.mastodon %}<a href="{{ speaker.social.mastodon | escape }}" target="_blank" rel="me noopener noreferrer" aria-label="{{ speaker.name | escape }} on Mastodon" title="Mastodon"><img src="{{ '/assets/images/mastodon.svg' | relative_url }}" alt=""></a>{% endif %}
+                    {% if speaker.social.bluesky %}<a href="{{ speaker.social.bluesky | escape }}" target="_blank" rel="me noopener noreferrer" aria-label="{{ speaker.name | escape }} on Bluesky" title="Bluesky"><img src="{{ '/assets/images/bluesky.svg' | relative_url }}" alt=""></a>{% endif %}
+                    {% if speaker.social.x %}<a href="{{ speaker.social.x | escape }}" target="_blank" rel="me noopener noreferrer" aria-label="{{ speaker.name | escape }} on X" title="X"><img src="{{ '/assets/images/x.svg' | relative_url }}" alt=""></a>{% endif %}
+                    {% if speaker.social.youtube %}<a href="{{ speaker.social.youtube | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ speaker.name | escape }} on YouTube" title="YouTube"><img src="{{ '/assets/images/youtube.svg' | relative_url }}" alt=""></a>{% endif %}
                   </div>
                 {% endif %}
               </div>

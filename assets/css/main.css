@@ -336,15 +336,22 @@ body {
 }
 
 .speaker-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border: 1px solid var(--line-strong);
   background: var(--paper);
-  color: var(--acm-deep);
-  padding: 0.25rem 0.55rem;
-  border-radius: 999px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.76rem;
-  font-weight: 700;
+  padding: 0;
+  border-radius: 50%;
   text-decoration: none;
+}
+
+.speaker-socials img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .speaker-socials a:hover,
@@ -938,10 +945,7 @@ h2 {
   }
 
   .speaker-socials a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
-    padding: 0.55rem 0.75rem;
+    padding: 0;
   }
 
   .sponsor-logo img {
