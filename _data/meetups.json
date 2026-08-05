@@ -102,7 +102,20 @@
       "Talk + Q&A",
       "Wrap-up"
     ], 
-    "photo_directory": "/assets/images/meetups/howmuchenergydoprunedllmsactuallysave"
+    "photo_directory": "/assets/images/meetups/howmuchenergydoprunedllmsactuallysave",
+        "speakers": [
+      {
+        "name": "Pranav Reddy Danda",
+        "photo": "/assets/images/speakers/pranav.jpeg",
+        "description": [
+          "Pranav Reddy Danda is a cybersecurity and AI engineer who recently completed an M.S. in Cybersecurity with an emphasis in Artificial Intelligence at Webster University, building on an undergraduate background in Electronics and Communication Engineering. His work sits at the intersection of machine learning and security, with a focus on the energy efficiency of large language models."
+        ],
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/pranav-reddy-danda"
+
+        }
+      }
+    ]
   },
   {
     "title": "LLM-Driven Merge Conflict Resolution: From Frustration to Automation",
