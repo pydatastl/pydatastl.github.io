@@ -14,22 +14,10 @@ permalink: /past_meetups/
 </section>
 
 <section class="meetups-section">
-	{% assign now_ts = "now" | date: "%s" %}
-	{% assign today_str = "now" | date: "%Y-%m-%d" %}
 	{% assign meetups = site.data.meetups | sort: "date" | reverse %}
-	{% assign past = "" | split: "" %}
-	{% for meetup in meetups %}
-		{% if meetup.date != today_str %}
-			{% assign meetup_ts = meetup.date | date: "%s" %}
-			{% if meetup_ts < now_ts %}
-				{% assign past = past | push: meetup %}
-			{% endif %}
-		{% endif %}
-	{% endfor %}
-	{% if past.size > 0 %}
-		<div class="meetups-grid">
-			{% for meetup in past %}
-				<div class="meetup-card">
+	<div class="meetups-grid" data-meetup-list="past">
+		{% for meetup in meetups %}
+			<div class="meetup-card" data-meetup-date="{{ meetup.date }}" data-meetup-time="{{ meetup.end_time | default: meetup.time | escape }}" hidden>
 					<h2>{{ meetup.title }}</h2>
 					<p>{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
 					{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
@@ -38,10 +26,11 @@ permalink: /past_meetups/
 						<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
 						{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">Meetup link</a>{% endif %}
 					</p>
-				</div>
-			{% endfor %}
-		</div>
-	{% else %}
-		<p class="lede">No past meetups are listed yet.</p>
-	{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+	<p class="lede" data-meetup-empty hidden>No past meetups are listed yet.</p>
+	<noscript><p class="lede">Enable JavaScript to view meetups by their current status.</p></noscript>
 </section>
+
+<script src="{{ '/assets/js/meetup-status.js' | relative_url }}"></script>

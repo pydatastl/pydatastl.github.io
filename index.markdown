@@ -21,58 +21,29 @@ permalink: /
 </section>
 
 
-{% assign now_ts = "now" | date: "%s" %}
-{% assign today_str = "now" | date: "%Y-%m-%d" %}
 {% assign meetups = site.data.meetups | sort: "date" %}
 
 <section class="meetups-section">
 	<h2>Next meetup</h2>
-	{% assign todays = "" | split: "" %}
-	{% assign upcoming = "" | split: "" %}
-	{% for meetup in meetups %}
-		{% if meetup.date == today_str %}
-			{% assign todays = todays | push: meetup %}
-		{% else %}
-			{% assign meetup_ts = meetup.date | date: "%s" %}
-			{% if meetup_ts > now_ts %}
-				{% assign upcoming = upcoming | push: meetup %}
-			{% endif %}
-		{% endif %}
-	{% endfor %}
-
-	{% if todays.size > 0 %}
-		<div class="meetups-grid">
-			{% for meetup in todays %}
-				<div class="meetup-card">
-					<h2>{{ meetup.title }}</h2>
-					<p>{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
-					{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
-					{% if meetup.description %}{% for paragraph in meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
-					<p class="cta-row">
-						<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
-						{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">RSVP</a>{% endif %}
-					</p>
-				</div>
-			{% endfor %}
-		</div>
-	{% elsif upcoming.size > 0 %}
-		{% assign next_meetup = upcoming[0] %}
-		<div class="meetups-grid">
-			<div class="meetup-card">
-				<h2>{{ next_meetup.title }}</h2>
-				<p>{{ next_meetup.date }}{% if next_meetup.time %} · {{ next_meetup.time }}{% endif %}</p>
-				{% if next_meetup.location %}<p>{{ next_meetup.location }}</p>{% endif %}
-				{% if next_meetup.description %}{% for paragraph in next_meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
+	<div class="meetups-grid" data-meetup-list="next">
+		{% for meetup in meetups %}
+			<div class="meetup-card" data-meetup-date="{{ meetup.date }}" data-meetup-time="{{ meetup.end_time | default: meetup.time | escape }}" hidden>
+				<h2>{{ meetup.title }}</h2>
+				<p>{{ meetup.date }}{% if meetup.time %} · {{ meetup.time }}{% endif %}</p>
+				{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
+				{% if meetup.description %}{% for paragraph in meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
 				<p class="cta-row">
-					<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ next_meetup.title | slugify }}">Event details</a>
-					{% if next_meetup.rsvp_url %}<a class="button" href="{{ next_meetup.rsvp_url }}">RSVP</a>{% endif %}
+					<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
+					{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">RSVP</a>{% endif %}
 				</p>
 			</div>
-		</div>
-	{% else %}
-		<p class="lede">No upcoming meetups listed yet.</p>
-	{% endif %}
+		{% endfor %}
+	</div>
+	<p class="lede" data-meetup-empty hidden>No upcoming meetups listed yet.</p>
+	<noscript><p class="lede">Enable JavaScript to view the next meetup.</p></noscript>
 </section>
+
+<script src="{{ '/assets/js/meetup-status.js' | relative_url }}"></script>
 
 <section class="meetup-slider">
 	<div class="slider-container">
