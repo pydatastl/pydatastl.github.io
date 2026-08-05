@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Code of Conduct
-description: PyData St. Louis's community standards and process for reporting and responding to conduct concerns.
+description: Official PyData and NumFOCUS community standards and reporting information for PyData St. Louis.
 nav_order: 6
 permalink: /code-of-conduct/
 ---
@@ -9,192 +9,109 @@ permalink: /code-of-conduct/
 <section class="hero">
 	<p class="eyebrow">Community standards</p>
 	<h1>Code of Conduct</h1>
-	<p class="lede">PyData St. Louis is committed to a welcoming, inclusive, accessible, and professionally respectful community where people can learn and collaborate safely.</p>
+	<p class="lede">PyData St. Louis follows the PyData and NumFOCUS Code of Conduct so everyone can participate in a welcoming, inclusive, and professional community.</p>
 </section>
-
-<figure class="code-of-conduct-banner">
-	<img src="{{ '/assets/images/ccc.png' | relative_url }}" alt="" aria-hidden="true">
-</figure>
 
 <section class="meetups-section code-of-conduct-section" markdown="1">
 
-**Version:** 1.0  
-**Effective date:** August 1, 2026  
-**Last reviewed:** August 1, 2026  
-**Reporting form:** [Submit a Code of Conduct report](https://forms.gle/v9GsAzTSJWyJiG1F9)  
-**General feedback form:** [Share general feedback with PyData St. Louis](https://forms.gle/3nvmcK5iBzZzQgsj8)  
-**Response contacts:** [PyData St. Louis organizers]({{ '/organizers/' | relative_url }})  
-**Governing policy and direct reporting route:** [NumFOCUS Code of Conduct](https://numfocus.org/code-of-conduct)
+**Official PyData policy:** [PyData Code of Conduct](https://pydata.org/code-of-conduct/)  
+**Complete governing policy:** [NumFOCUS Code of Conduct](https://numfocus.org/code-of-conduct)  
+**Official reporting form:** [Report a Code of Conduct incident to NumFOCUS](https://forms.monday.com/forms/f130e8cddb99568fa86cf077b8912a60?r=use1)  
+**Local event response:** [Community and Code of Conduct Team]({{ '/community-team/' | relative_url }})
 
-## Community and Code of Conduct Team
+## Our commitment
 
-The Community and Code of Conduct Team regularly reviews submissions from the general feedback form and advises PyData St. Louis organizers on ways to improve the community, including promoting diversity and inclusivity at our events. The team suggests practical improvements that help people from different backgrounds, identities, abilities, and experience levels feel welcome and able to participate.
+PyData is an educational program of NumFOCUS, and PyData St. Louis follows the NumFOCUS Code of Conduct. It applies to participants, speakers, organizers, volunteers, sponsors, and attendees in our in-person and online event spaces.
 
-If you would like to help make PyData St. Louis events more diverse, inclusive, and accessible, [apply to join the Community and Code of Conduct Team](https://forms.gle/EPCm21csdgvqKnMV7).
+Community members are expected to be kind, considerate, inclusive, and respectful of different viewpoints and experiences. Harassment, discrimination, intimidation, unwelcome sexual attention, threats, sustained disruption, and other behavior inappropriate for a professional community are not tolerated.
 
-Suggestions, event ideas, and other general comments can be shared through the [general feedback form](https://forms.gle/3nvmcK5iBzZzQgsj8).
+The official policies linked above are authoritative and contain the complete standards, scope, procedures, and possible consequences.
 
-Conduct concerns should be submitted through the [Code of Conduct reporting form](https://forms.gle/v9GsAzTSJWyJiG1F9), not the team application or general feedback form.
+### Our community
 
-## Purpose and governing policy
+NumFOCUS community members value kindness, inclusivity, transparency, curiosity, and collaboration. Participants are encouraged to:
 
-PyData St. Louis is a community for people who use, develop, teach, learn, or are interested in open-source tools for data analysis, scientific computing, machine learning, visualization, and related work.
-
-PyData St. Louis adopts the current [NumFOCUS Code of Conduct](https://numfocus.org/code-of-conduct) as its governing behavioral standard. This local policy explains how that Code applies within PyData St. Louis and how local concerns will be received and addressed.
-
-If this document conflicts with the current NumFOCUS Code of Conduct or an applicable NumFOCUS procedure, the NumFOCUS policy controls. PyData St. Louis may consult or refer reports to NumFOCUS. Anyone may also report directly to NumFOCUS without first contacting PyData St. Louis.
-
-## Community commitment
-
-We are committed to providing a welcoming, inclusive, accessible, and professionally respectful community experience for everyone, regardless of background, identity, experience level, role, employer, technical preference, or perceived status.
-
-These standards apply equally to first-time attendees, long-standing participants, speakers, sponsors, organizers, volunteers, venue personnel, and online contributors. Good-faith disagreement is welcome, but it must remain respectful and must not become harassment, intimidation, personal attack, sustained disruption, or abuse of authority.
-
-## Scope
-
-This policy applies to all participants in PyData St. Louis spaces and activities, including:
-
-- In-person meetings, workshops, tutorials, social gatherings, volunteer meetings, and planning sessions.
-- Virtual talks, livestreams, video conferences, chats, recordings, and audience question-and-answer sessions.
-- Websites, registration systems, newsletters, group chats, Meetup pages, repositories, issue trackers, social media, and other platforms administered by PyData St. Louis.
-- Travel, venue-adjacent activities, and off-site events organized, promoted, or represented as part of a PyData St. Louis activity.
-- Conduct by anyone publicly representing PyData St. Louis in an authorized role.
-- Conduct in an unofficial space when it is directed at PyData St. Louis participants or has a credible connection to their safety, accessibility, or ability to participate in official community spaces.
-
-The final category will be applied carefully. PyData St. Louis does not claim authority over participants' private lives. We will consider whether conduct has a meaningful community connection, creates a credible safety or participation concern, and can be addressed through an effective and proportionate community action.
-
-## Expected behavior
-
-Participants are expected to:
-
-- Treat others with consideration, respect, empathy, and professional courtesy.
+- Be open to collaboration and focus on what is best for the community.
+- Acknowledge the time and effort contributed by others.
+- Show empathy, consideration, and respect.
+- Be courteous when disagreeing or raising concerns.
+- Respect differing viewpoints and experiences.
 - Use welcoming and inclusive language.
-- Respect differing viewpoints, experience levels, communication styles, and technical backgrounds.
-- Critique ideas and work without demeaning the person presenting them.
-- Respect physical, social, conversational, and digital boundaries.
-- Obtain consent before physical contact and stop an interaction when asked.
-- Honor stated photography, recording, privacy, name, and pronoun preferences.
-- Support accessibility needs and avoid obstructing accommodations.
-- Follow reasonable directions from event staff, moderators, venue personnel, and conduct responders.
-- Avoid monopolizing discussions, repeatedly interrupting others, or preventing others from participating.
-- Protect confidential or private information learned through community participation.
-- Accept responsibility for impact, even when harmful impact was not intended.
-- Respond constructively to feedback and change problematic behavior.
 
-## Unacceptable behavior
+Every community member has the right to have their identity respected. We are committed to a positive experience for everyone regardless of age, gender identity or expression, sexual orientation, disability, neurotype, physical appearance, body size, ethnicity, nationality, race, religion or lack thereof, education, socioeconomic status, or level of experience.
 
-Unacceptable behavior includes, but is not limited to:
+### Unacceptable behavior
 
-- Harassment, discrimination, intimidation, bullying, stalking, or deliberate following.
-- Threats of violence, encouragement of self-harm, or conduct that creates a reasonable fear for physical safety.
-- Possession of weapons at an event where the NumFOCUS weapons policy applies.
-- Unwelcome sexualized language, imagery, attention, advances, conduct, or contact.
-- Unwanted physical contact or continued social contact after a request to stop.
-- Insults, slurs, discriminatory jokes, stereotypes, ridicule, personal attacks, or humiliating treatment.
-- Demeaning someone because of identity, disability, appearance, body size, neurotype, race, ethnicity, nationality, age, religion, gender, gender identity or expression, sexual orientation, education, socioeconomic background, professional status, technical experience, or a similar characteristic.
-- Publishing or threatening to publish another person's private identifying or contact information without permission.
-- Misusing recordings, photographs, screenshots, logs, or private interactions to harass, intimidate, or retaliate.
-- Trolling, hostile provocation, badgering, sustained disruption, repeated interruption, or deliberate obstruction of community activity.
-- Circumventing a moderation action, no-contact direction, suspension, or ban through another account or intermediary.
-- Abuse of organizer, maintainer, sponsor, employer, financial, social, technical, or professional power.
-- Pressuring someone not to report, interfering with evidence, manipulating a review, or retaliating against anyone involved in a report.
-- Encouraging or assisting prohibited behavior by others.
-- Knowingly fabricating a report or deliberately falsifying material evidence.
+Examples of unacceptable behavior include:
 
-A mistaken, unsubstantiated, incomplete, or out-of-scope report is **not** a false report and will not itself be treated as misconduct. Only intentional fabrication or deliberate evidence manipulation may constitute a violation.
+- Harassment, deliberate intimidation, stalking, or following.
+- Violent threats, incitement of violence, or encouragement of self-harm.
+- Sexualized language or imagery, unwelcome sexual attention, or advances.
+- Unwelcome physical contact or continued interaction after a request to stop.
+- Sexist, racist, discriminatory, exclusionary, or stereotype-based jokes and language.
+- Insults, put-downs, ridicule, trolling, or derogatory comments.
+- Publishing private information or sharing confidential content without permission, except when necessary within the Code of Conduct process.
+- Recording or taking screenshots of online activity for harassment.
+- Creating additional accounts to continue harassment or circumvent a ban.
+- Sustained disruption of community discussions or events.
+- Other behavior inappropriate for a professional audience of people from many backgrounds.
+- Advocating for or encouraging any of the above behavior.
 
-## Reporting a concern
+Anyone asked to stop inappropriate behavior is expected to comply immediately.
 
-Anyone may report a concern, including a person directly affected, a witness, an organizer, a sponsor, or someone who learns of a credible concern. You do not need to determine whether an incident definitively violated this policy before reporting it.
+### Weapons policy
 
-Choose whichever reporting option feels safest and most appropriate:
+Weapons are not allowed at NumFOCUS events. This includes firearms, explosives or fireworks, large knives designed for hunting or display, other objects or substances designed to injure or incapacitate, and replicas of dangerous weapons. A person possessing such an item will be required to leave and may return only without it.
 
-- Submit the [PyData St. Louis Code of Conduct reporting form](https://forms.gle/v9GsAzTSJWyJiG1F9).
-- Speak privately with or directly message an [identified PyData St. Louis organizer]({{ '/organizers/' | relative_url }}).
-- Report directly through the current route on the [NumFOCUS Code of Conduct](https://numfocus.org/code-of-conduct) page, instead of or in addition to a local report.
+### Scope
 
-If a report concerns an organizer, creates a conflict of interest, or would be uncomfortable to submit locally, use the direct NumFOCUS route. You do not need local permission to do so.
+The Code of Conduct applies to everyone participating in, attending, or interacting with PyData St. Louis in-person and online events. It covers event spaces, event-related off-site social activities, and interactions through official event accounts, video platforms, hashtags, and communication spaces.
 
-For immediate physical danger, contact emergency services or venue security first. The Code of Conduct process is not an emergency service.
+### Consequences
 
-### Helpful information
+When a participant violates the Code of Conduct, the Code of Conduct Event Response Team or NumFOCUS Code of Conduct Working Group may take or recommend an appropriate action. Depending on the circumstances, this may include a warning, a required change in behavior, removal from an event or community space, loss of event responsibilities, or exclusion from future events. Current official procedures control all responses.
 
-Share only as much information as you are comfortable providing. Helpful details may include:
+## How to report
 
-- The date, approximate time, time zone, location, event, or platform.
-- Whether the situation is ongoing.
-- What happened and how it affected you or others.
-- Names, usernames, roles, or descriptions of the people involved.
-- Witnesses or others who may have relevant information.
-- Links, messages, screenshots, recordings, or other supporting material.
-- Immediate safety, accessibility, privacy, or retaliation concerns.
-- A safe way and time to contact you.
-- Support or an outcome that would be helpful.
+Submit Code of Conduct concerns through the [official NumFOCUS reporting form](https://forms.monday.com/forms/f130e8cddb99568fa86cf077b8912a60?r=use1). Reports submitted through this form go to the NumFOCUS Code of Conduct Working Group and are handled under NumFOCUS policy and procedures.
 
-## How reports are handled
+If you are unsure whether an incident violates the Code of Conduct or falls within its scope, you are still encouraged to report it. You may submit a report without providing contact information, although contact information allows the Working Group to ask follow-up questions and share updates.
 
-We will prioritize immediate safety, acknowledge reports as promptly as practical, identify conflicts of interest before substantive review, and limit case information to people who need it to respond.
+If an incident occurs during a PyData St. Louis meetup and you need immediate assistance, speak privately with a member of the Community and Code of Conduct Team or one of the [meetup organizers]({{ '/organizers/' | relative_url }}). They can help address urgent needs, enforce the Code of Conduct on site, contact venue staff or emergency services, provide an escort, or take other appropriate immediate steps to support safety during the event. Please also submit the incident through the official NumFOCUS reporting form.
 
-Non-conflicted responders will normally:
+Event-specific reporting instructions may be found on the website for the event. Meetup-specific reporting instructions should be found on the Meetup group's page. For PyData St. Louis, these instructions are available here and on our [Meetup group](https://www.meetup.com/pydata-st-louis/).
 
-1. Assess immediate safety, accessibility, and support needs.
-2. Determine whether the concern falls within PyData St. Louis or NumFOCUS scope.
-3. Preserve and review relevant information.
-4. Gather perspectives privately when safe and appropriate.
-5. Give the reported person a meaningful opportunity to respond when doing so will not create an unreasonable safety, retaliation, or privacy risk.
-6. Consider context, impact, severity, power imbalance, patterns, and risk of recurrence.
-7. Select and document a proportionate response.
-8. Communicate relevant next steps separately to the people involved.
-9. Consult or notify NumFOCUS when appropriate.
+If there is immediate physical danger, contact emergency services or venue security first. NumFOCUS and PyData St. Louis are not emergency services.
 
-The reported person does not have a right to confront the reporter or learn the identities of confidential participants.
+The NumFOCUS Code of Conduct Working Group may contact the local team, relevant organizers, or community managers when follow-up concerning an event is necessary. On-site action by the local team does not replace the official NumFOCUS reporting and review process.
 
-### Conflicts of interest
+If a report involves a local responder or organizer, presents a conflict of interest, or would be uncomfortable to submit locally, report directly to the NumFOCUS Code of Conduct Working Group through the official form.
 
-A responder must disclose and ordinarily recuse from a report when they are involved in the concern, have a close personal or professional relationship with someone involved, could benefit from the outcome, have publicly reached a fixed conclusion, or could otherwise reasonably be seen as unable to act impartially.
+### Helpful information for a report
 
-A recused person will not access case materials, interview participants, join deliberations, recommend consequences, or receive confidential updates beyond what is necessary to implement an approved action. If a non-conflicted local review is not possible, the concern will be referred to NumFOCUS or another appropriate independent reviewer.
+Provide as much information as you feel comfortable sharing. Useful details may include:
 
-### Privacy
+- Your contact information, if you would like follow-up.
+- The date, approximate time, and location of the incident.
+- Whether the incident is ongoing.
+- A description of what happened and the surrounding circumstances.
+- Identifying information for the person whose behavior is being reported.
+- Names or contact information for witnesses or other people involved.
+- Relevant messages, screenshots, links, or other supporting records.
+- Any immediate safety or retaliation concerns.
 
-Reports and deliberations will be handled privately and shared only on a need-to-know basis. Depending on the circumstances, limited information may be shared with non-conflicted responders, NumFOCUS, an independent adviser, or a venue or platform representative who must implement a safety measure.
+### What happens after a report
 
-We will minimize identifying information and will not publicly identify a reporter, affected person, witness, or reported person without consent unless disclosure is necessary to address a serious safety risk or is legally required. We cannot guarantee absolute confidentiality or prevent someone from inferring an identity from the circumstances.
+The NumFOCUS Code of Conduct Working Group receives and evaluates reports submitted through the official form. It acknowledges reports, checks for conflicts of interest, gathers additional information when needed, evaluates the incident, determines an appropriate response, and follows up with the reporter when contact information is available.
 
-## Safety measures and outcomes
+Reports are handled confidentially. Details are anonymized as much as possible when an incident is discussed with a reported person, but anonymity cannot be guaranteed when the circumstances make an identity apparent. Include any concerns about safety or retaliation in the report. A Working Group member with a conflict of interest must recuse from discussion, documentation, and decisions concerning that report.
 
-Temporary measures may be taken before a review is complete when reasonably necessary to protect participants or preserve the process. These may include separating participants, providing an escort, changing room or platform access, issuing a temporary no-contact direction, removing sensitive public content, pausing community privileges, or temporarily removing someone from an event or online space. A temporary measure is not, by itself, a final finding.
+Under the published procedure, a Working Group member follows up within one week when the reporter provides contact information. Please review the complete [NumFOCUS Code of Conduct](https://numfocus.org/code-of-conduct) for current procedures, response options, and confidentiality information.
 
-A review may find that a concern is outside scope, that information is insufficient, that no violation occurred, or that conduct violated this policy. Possible responses include:
+## Source and updates
 
-- No further action or referral to a more appropriate process.
-- Private feedback, coaching, or a request for changed behavior or repair.
-- Content correction or removal.
-- A written warning, behavior agreement, or no-contact direction.
-- Restriction from a channel, activity, event, topic, or role.
-- Loss of organizer, volunteer, moderator, speaker, sponsor, or leadership privileges.
-- Temporary suspension or permanent exclusion from PyData St. Louis activities.
-- Escalation to NumFOCUS or another responsible organization.
-- Changes to event design, accessibility, moderation, training, sponsorship, or governance.
+This page provides local meetup instructions and selected material from the official [PyData Code of Conduct](https://pydata.org/code-of-conduct/) and [NumFOCUS Code of Conduct](https://numfocus.org/code-of-conduct). If this page ever differs from an official policy or procedure, the official NumFOCUS material controls.
 
-Responses do not have to begin with the least serious option. Severity, safety, power imbalance, repeated conduct, retaliation, unwillingness to change, and risk of recurrence may justify stronger action. Prominence, contribution history, employment, sponsorship, friendship with organizers, or financial value will not excuse misconduct or receive preferential treatment.
-
-## Anti-retaliation
-
-Retaliation is prohibited. This includes threats, exclusion, professional pressure, online targeting, doxxing, adverse organizer or volunteer action, or other punishment because someone reported a concern, supported a report, served as a witness, enforced this policy, or requested review of a decision.
-
-Good-faith participation is protected even when a report is not substantiated. Retaliation may be reported as a separate incident and may justify immediate protective measures or more serious consequences.
-
-## Reconsideration
-
-A person directly subject to a final local consequence may request one reconsideration within 14 calendar days through the [Code of Conduct reporting form](https://forms.gle/v9GsAzTSJWyJiG1F9). The request should be identified as a reconsideration request and must describe significant new evidence, a material procedural error, a previously undisclosed conflict of interest, a clearly disproportionate consequence, or a material misunderstanding of the conduct reviewed.
-
-Disagreement with the outcome, repetition of arguments already considered, attacks on a reporter, or demands to identify confidential participants are not sufficient grounds. Whenever feasible, the reconsideration will be handled by non-conflicted people who were not the principal original decision-makers. NumFOCUS decisions remain subject to NumFOCUS procedures rather than this local process.
-
-## Policy review
-
-This policy will be reviewed at least annually and when NumFOCUS materially changes its Code of Conduct or reporting procedures. Substantive updates will include a new effective date and will not retroactively expand prohibited conduct, although current safety measures may address an ongoing risk.
-
-This local policy is informed by the NumFOCUS Code of Conduct and response guidance and by community practices from the Python Software Foundation, PyCon US, Kubernetes, CNCF, Mozilla, Microsoft Open Source, DjangoCon, and the Linux kernel community.
+The NumFOCUS Code of Conduct is available under the [Creative Commons Attribution-ShareAlike 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/). This adaptation retains that attribution and license.
 
 </section>

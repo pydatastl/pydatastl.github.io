@@ -18,7 +18,7 @@ permalink: /about/
 		</article>
 		<article>
 			<h2>Code of Conduct</h2>
-			<p>Our <a href="{{ '/code-of-conduct/' | relative_url }}">Code of Conduct and community response policy</a> explains the standards for PyData St. Louis spaces and how to report a concern. Concerns can be submitted through the <a href="https://forms.gle/v9GsAzTSJWyJiG1F9">Code of Conduct reporting form</a>.</p>
+			<p>PyData St. Louis follows the official PyData and NumFOCUS Code of Conduct. Our <a href="{{ '/code-of-conduct/' | relative_url }}">Code of Conduct page</a> explains the standards, how to request immediate help at a meetup, and how to submit concerns through the <a href="https://forms.monday.com/forms/f130e8cddb99568fa86cf077b8912a60?r=use1">official NumFOCUS reporting form</a>.</p>
 		</article>
 	</div>
 </section>
