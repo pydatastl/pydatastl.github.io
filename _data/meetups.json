@@ -166,6 +166,7 @@
       "Talk + Q&A",
       "Wrap-up"
     ],
+    "photo_directory": "/assets/images/meetups/asyncdjango",
     "speakers": [
       {
         "name": "Kevin Lai",
