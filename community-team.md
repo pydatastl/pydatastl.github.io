@@ -35,9 +35,9 @@ permalink: /community-team/
 
 Team members serving as incident responders will be identified in the event's reporting instructions or announced at the meetup so participants know whom they can approach privately.
 
-If you need immediate assistance during an event, speak privately with a team member or [meetup organizer]({{ '/organizers/' | relative_url }}). They can help enforce the Code of Conduct on site, contact venue staff or emergency services, provide an escort, or take other appropriate immediate steps to support safety.
+Event-specific concerns should ideally be reported privately to a team member or [meetup organizer]({{ '/organizers/' | relative_url }}). They can enforce the Code of Conduct on site, contact venue staff or emergency services, provide an escort, or take other appropriate immediate steps to support safety.
 
-On-site action does not replace the official NumFOCUS process. Code of Conduct concerns should also be submitted through the [official NumFOCUS reporting form](https://forms.monday.com/forms/f130e8cddb99568fa86cf077b8912a60?r=use1). Read the complete [PyData St. Louis Code of Conduct information]({{ '/code-of-conduct/' | relative_url }}).
+If no organizer or team member is present—or you would prefer not to report locally—use the [PyData St. Louis Code of Conduct reporting form](https://forms.monday.com/forms/f130e8cddb99568fa86cf077b8912a60?r=use1). This link uses the required official NumFOCUS reporting system. Read the complete [PyData St. Louis Code of Conduct information]({{ '/code-of-conduct/' | relative_url }}).
 
 ## Share general feedback
 

@@ -73,19 +73,19 @@ When a participant violates the Code of Conduct, the Code of Conduct Event Respo
 
 ## How to report
 
-Submit Code of Conduct concerns through the [official NumFOCUS reporting form](https://forms.monday.com/forms/f130e8cddb99568fa86cf077b8912a60?r=use1). Reports submitted through this form go to the NumFOCUS Code of Conduct Working Group and are handled under NumFOCUS policy and procedures.
+For an event-specific concern, ideally speak privately with a [PyData St. Louis organizer]({{ '/organizers/' | relative_url }}) or a member of the [Community and Code of Conduct Team]({{ '/community-team/' | relative_url }}). This gives the local Event Response Team an opportunity to address immediate needs and enforce the Code of Conduct during the meetup.
+
+If an organizer or team member is not present, you would prefer not to report locally, or the concern involves a local responder, submit the [PyData St. Louis Code of Conduct reporting form](https://forms.monday.com/forms/f130e8cddb99568fa86cf077b8912a60?r=use1). This is the official NumFOCUS form, and submissions go directly to the NumFOCUS Code of Conduct Working Group under its policies and procedures.
 
 If you are unsure whether an incident violates the Code of Conduct or falls within its scope, you are still encouraged to report it. You may submit a report without providing contact information, although contact information allows the Working Group to ask follow-up questions and share updates.
 
-If an incident occurs during a PyData St. Louis meetup and you need immediate assistance, speak privately with a member of the Community and Code of Conduct Team or one of the [meetup organizers]({{ '/organizers/' | relative_url }}). They can help address urgent needs, enforce the Code of Conduct on site, contact venue staff or emergency services, provide an escort, or take other appropriate immediate steps to support safety during the event. Please also submit the incident through the official NumFOCUS reporting form.
+Local responders can help address urgent needs, contact venue staff or emergency services, provide an escort, or take other appropriate immediate steps to support safety during the event. Reports made in person may also be documented through the official form.
 
 Event-specific reporting instructions may be found on the website for the event. Meetup-specific reporting instructions should be found on the Meetup group's page. For PyData St. Louis, these instructions are available here and on our [Meetup group](https://www.meetup.com/pydata-st-louis/).
 
 If there is immediate physical danger, contact emergency services or venue security first. NumFOCUS and PyData St. Louis are not emergency services.
 
 The NumFOCUS Code of Conduct Working Group may contact the local team, relevant organizers, or community managers when follow-up concerning an event is necessary. On-site action by the local team does not replace the official NumFOCUS reporting and review process.
-
-If a report involves a local responder or organizer, presents a conflict of interest, or would be uncomfortable to submit locally, report directly to the NumFOCUS Code of Conduct Working Group through the official form.
 
 ### Helpful information for a report
 
