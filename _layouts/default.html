@@ -38,10 +38,26 @@
             {% endif %}
             <span class="brand-text">{{ site.title }}</span>
           </a>
-          <nav class="site-nav">
-            {% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
-            {% for nav_page in nav_pages %}
-              <a href="{{ nav_page.url | relative_url }}">{{ nav_page.title | escape }}</a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            {% for item in site.data.navigation %}
+              {% if item.children %}
+                {% assign group_is_active = false %}
+                {% for child in item.children %}
+                  {% if page.url == child.url %}
+                    {% assign group_is_active = true %}
+                  {% endif %}
+                {% endfor %}
+                <details class="nav-dropdown{% if group_is_active %} nav-dropdown--active{% endif %}">
+                  <summary>{{ item.title | escape }}</summary>
+                  <div class="nav-dropdown-menu{% if item.align == 'end' %} nav-dropdown-menu--end{% endif %}">
+                    {% for child in item.children %}
+                      <a href="{{ child.url | relative_url }}"{% if page.url == child.url %} aria-current="page"{% endif %}>{{ child.title | escape }}</a>
+                    {% endfor %}
+                  </div>
+                </details>
+              {% else %}
+                <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
+              {% endif %}
             {% endfor %}
             {% if site.aux_links %}
               {% for link in site.aux_links %}
@@ -80,5 +96,6 @@
         </div>
       </footer>
     </div>
+    <script src="{{ '/assets/js/navigation.js' | relative_url }}" defer></script>
   </body>
 </html>

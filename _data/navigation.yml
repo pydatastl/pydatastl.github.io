@@ -1,0 +1,23 @@
+- title: Home
+  url: /
+
+- title: Meetups
+  children:
+    - title: Upcoming meetups
+      url: /upcoming_meetups/
+    - title: Past meetups
+      url: /past_meetups/
+
+- title: Sponsors
+  url: /sponsors/
+
+- title: Organizers
+  url: /organizers/
+
+- title: Code of Conduct
+  align: end
+  children:
+    - title: Code of Conduct
+      url: /code-of-conduct/
+    - title: Community Team
+      url: /community-team/
