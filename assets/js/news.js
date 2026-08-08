@@ -2,7 +2,7 @@
   'use strict';
 
   var panel = document.querySelector('[data-news-panel]');
-  if (!panel) return;
+  var newsRoot = document.querySelector('[data-news-baseurl]');
 
   function currentChicagoDate() {
     var parts = new Intl.DateTimeFormat('en-US', {
@@ -23,7 +23,7 @@
   function imageSource(path) {
     if (/^(?:https?:)?\/\//i.test(path) || path.indexOf('data:') === 0) return path;
 
-    var baseUrl = panel.dataset.newsBaseurl || '';
+    var baseUrl = newsRoot ? newsRoot.dataset.newsBaseurl || '' : '';
     return baseUrl.replace(/\/$/, '') + '/' + path.replace(/^\//, '');
   }
 
@@ -35,8 +35,8 @@
       .trim();
   }
 
-  function renderBodyImages(item) {
-    var paragraphs = item.querySelectorAll('.news-item-content p');
+  function renderBodyImages(content) {
+    var paragraphs = content.querySelectorAll('p');
 
     for (var paragraphIndex = 0; paragraphIndex < paragraphs.length; paragraphIndex += 1) {
       var paragraph = paragraphs[paragraphIndex];
@@ -56,6 +56,13 @@
     }
   }
 
+  var contentAreas = document.querySelectorAll('.news-item-content');
+  for (var contentIndex = 0; contentIndex < contentAreas.length; contentIndex += 1) {
+    renderBodyImages(contentAreas[contentIndex]);
+  }
+
+  if (!panel) return;
+
   var today = currentChicagoDate();
   var limit = Number(panel.dataset.newsLimit) || Infinity;
   var items = panel.querySelectorAll('[data-news-item]');
@@ -63,7 +70,6 @@
 
   for (var itemIndex = 0; itemIndex < items.length; itemIndex += 1) {
     var item = items[itemIndex];
-    renderBodyImages(item);
     var hasStarted = item.dataset.newsDate <= today;
     var hasNotEnded = !item.dataset.newsEndDate || today <= item.dataset.newsEndDate;
     var show = hasStarted && hasNotEnded && visibleCount < limit;

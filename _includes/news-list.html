@@ -1,0 +1,28 @@
+{% assign news_items = site.news | sort: "scheduled_date" | reverse %}
+{% if news_items.size > 0 %}
+<section class="news-panel{% if include.archive %} news-panel--archive{% endif %}" data-news-panel data-news-limit="{{ include.limit | default: 100 }}" data-news-baseurl="{{ site.baseurl }}" hidden>
+	<div class="news-panel-heading">
+		{% if include.archive %}
+			<div>
+				<p class="eyebrow">Announcements</p>
+				<h1>Latest news</h1>
+			</div>
+		{% else %}
+			<div>
+				<p class="eyebrow">Latest updates</p>
+				<h2>News</h2>
+			</div>
+			<a href="{{ '/news/' | relative_url }}">View all news</a>
+		{% endif %}
+	</div>
+	<div class="news-list">
+		{% for news_item in news_items %}
+			<article class="news-list-item" data-news-item data-news-date="{{ news_item.scheduled_date | date: '%Y-%m-%d' }}"{% if news_item.end_date %} data-news-end-date="{{ news_item.end_date | date: '%Y-%m-%d' }}"{% endif %} hidden>
+				<time datetime="{{ news_item.scheduled_date | date: '%Y-%m-%d' }}">{{ news_item.scheduled_date | date: '%B %-d, %Y' }}</time>
+				<h3><a href="{{ news_item.url | relative_url }}">{{ news_item.title | escape }}</a></h3>
+			</article>
+		{% endfor %}
+	</div>
+</section>
+<script src="{{ '/assets/js/news.js' | relative_url }}"></script>
+{% endif %}

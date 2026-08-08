@@ -501,46 +501,99 @@ body {
   margin: 0;
 }
 
-.news-list {
-  display: grid;
-  gap: 0.8rem;
+.news-panel-heading > div {
+  min-width: 0;
 }
 
-.news-item {
-  padding: 1rem;
-  border-left: 4px solid var(--accent);
-  background: var(--surface);
-  border-radius: 0 0.55rem 0.55rem 0;
+.news-panel-heading > a {
+  flex: 0 0 auto;
+}
+
+.news-panel--archive {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(1.3rem, 4vw, 3rem);
+}
+
+.news-panel--archive .news-panel-heading {
+  margin-bottom: 2rem;
+}
+
+.news-panel--archive .news-panel-heading h1 {
+  margin-top: 0.65rem;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.news-list {
+  display: grid;
+}
+
+.news-list-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-list-item:first-child {
+  padding-top: 0;
+}
+
+.news-list-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.news-list-item time,
+.news-article-date {
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.news-list-item h3 {
+  margin: 0.15rem 0 0;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.news-list-item h3 a {
+  color: var(--ink-strong);
+  text-decoration: none;
+}
+
+.news-list-item h3 a:hover,
+.news-list-item h3 a:focus-visible {
+  color: var(--acm-deep);
+  text-decoration: underline;
+}
+
+.news-article {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(1.3rem, 4vw, 3rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.news-article h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.news-article-date {
+  margin: 0 0 1.25rem;
 }
 
 .news-cover {
   display: block;
-  width: calc(100% + 2rem);
-  max-width: none;
-  height: clamp(150px, 24vw, 280px);
-  margin: -1rem -1rem 1rem;
-  object-fit: cover;
-  border-radius: 0 0.55rem 0 0;
-}
-
-.news-item header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.news-item h3 {
-  margin: 0;
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 1.05rem;
-}
-
-.news-item time {
-  flex: 0 0 auto;
-  color: var(--muted);
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.72rem;
+  width: 100%;
+  height: auto;
+  margin: 1.25rem 0;
+  border-radius: 0.55rem;
 }
 
 .news-item-content > :first-child {
@@ -558,6 +611,12 @@ body {
   margin: 1rem auto;
   border: 1px solid var(--line);
   border-radius: 0.5rem;
+}
+
+.news-back-link {
+  margin: 2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
 
 .code-of-conduct-section {
@@ -1031,10 +1090,6 @@ h2 {
   .sponsors-section,
   .meetups-section {
     padding: 1rem;
-  }
-
-  .news-item header {
-    display: block;
   }
 
   .event-detail-page {

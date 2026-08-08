@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article class="news-article" data-news-baseurl="{{ site.baseurl }}">
+	<p class="eyebrow">News</p>
+	<h1>{{ page.title | escape }}</h1>
+	<p class="news-article-date"><time datetime="{{ page.scheduled_date | date: '%Y-%m-%d' }}">{{ page.scheduled_date | date: '%B %-d, %Y' }}</time></p>
+	{% if page.cover_image %}
+		<img class="news-cover" src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_image_alt | default: page.title | escape }}">
+	{% endif %}
+	<div class="news-item-content">
+		{{ content }}
+	</div>
+	<p class="news-back-link"><a href="{{ '/news/' | relative_url }}">&larr; Back to all news</a></p>
+</article>
+
+<script src="{{ '/assets/js/news.js' | relative_url }}"></script>
