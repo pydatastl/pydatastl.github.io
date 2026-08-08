@@ -38,6 +38,11 @@ aux_links: null
 plugins:
   - jekyll-feed
 
+# Markdown announcements shown in the homepage news panel.
+collections:
+  news:
+    output: false
+
 # Preserve the response-header manifest for hosts that support Netlify-style
 # _headers files. GitHub Pages itself does not apply custom response headers.
 include:

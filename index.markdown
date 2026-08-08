@@ -20,6 +20,31 @@ permalink: /
 	</div>
 </section>
 
+{% assign news_items = site.news | sort: "scheduled_date" | reverse %}
+{% if news_items.size > 0 %}
+<section class="news-panel" data-news-panel data-news-limit="3" data-news-baseurl="{{ site.baseurl }}" hidden>
+	<div class="news-panel-heading">
+		<p class="eyebrow">Latest updates</p>
+		<h2>News</h2>
+	</div>
+	<div class="news-list">
+		{% for news_item in news_items %}
+			<article class="news-item" data-news-item data-news-date="{{ news_item.scheduled_date | date: '%Y-%m-%d' }}"{% if news_item.end_date %} data-news-end-date="{{ news_item.end_date | date: '%Y-%m-%d' }}"{% endif %} hidden>
+				{% if news_item.cover_image %}
+					<img class="news-cover" src="{{ news_item.cover_image | relative_url }}" alt="{{ news_item.cover_image_alt | default: news_item.title | escape }}">
+				{% endif %}
+				<header>
+					<h3>{{ news_item.title | escape }}</h3>
+					<time datetime="{{ news_item.scheduled_date | date: '%Y-%m-%d' }}">{{ news_item.scheduled_date | date: '%B %-d, %Y' }}</time>
+				</header>
+				<div class="news-item-content">{{ news_item.content }}</div>
+			</article>
+		{% endfor %}
+	</div>
+</section>
+<script src="{{ '/assets/js/news.js' | relative_url }}"></script>
+{% endif %}
+
 
 {% assign meetups = site.data.meetups | sort: "date" %}
 
