@@ -122,6 +122,7 @@ body {
 }
 
 .site-nav a[aria-current="page"],
+.site-nav a.nav-link--active,
 .nav-dropdown--active > summary {
   color: var(--accent-deep);
 }

@@ -56,7 +56,13 @@
                   </div>
                 </details>
               {% else %}
-                <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
+                {% assign item_is_active = false %}
+                {% if page.url == item.url %}
+                  {% assign item_is_active = true %}
+                {% elsif item.active_prefix and page.url contains item.active_prefix %}
+                  {% assign item_is_active = true %}
+                {% endif %}
+                <a href="{{ item.url | relative_url }}"{% if item_is_active %} class="nav-link--active"{% endif %}{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
               {% endif %}
             {% endfor %}
             {% if site.aux_links %}

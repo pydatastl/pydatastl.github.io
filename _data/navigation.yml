@@ -16,6 +16,7 @@
 
 - title: News
   url: /news/
+  active_prefix: /news/
 
 - title: Code of Conduct
   align: end
