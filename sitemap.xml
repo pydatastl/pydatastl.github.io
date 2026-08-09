@@ -1,0 +1,26 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for sitemap_page in site.pages %}
+  {% unless sitemap_page.url == '/404.html' or sitemap_page.url == '/robots.txt' or sitemap_page.url == '/sitemap.xml' or sitemap_page.url contains '/feed.xml' %}
+  <url>
+    <loc>{{ sitemap_page.url | absolute_url | xml_escape }}</loc>
+  </url>
+  {% endunless %}
+{% endfor %}
+{% for news_item in site.news %}
+  <url>
+    <loc>{{ news_item.url | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ news_item.scheduled_date | date_to_xmlschema }}</lastmod>
+  </url>
+{% endfor %}
+{% for post in site.posts %}
+  <url>
+    <loc>{{ post.url | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+  </url>
+{% endfor %}
+</urlset>

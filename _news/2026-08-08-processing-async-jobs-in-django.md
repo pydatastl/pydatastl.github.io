@@ -1,5 +1,6 @@
 ---
 title: Processing Async Jobs in Django
+description: Join PyData St. Louis on August 11 for a beginner-friendly session about reliable asynchronous applications with Python, Django, and Celery.
 scheduled_date: 2026-08-08
 cover_image: /assets/images/meetups/asyncdjango/aysncdjango.png
 cover_image_alt: Processing Async Jobs in Django meetup announcement for August 11 at Spark Coworking

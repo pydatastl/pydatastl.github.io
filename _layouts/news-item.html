@@ -2,14 +2,20 @@
 layout: default
 ---
 
-<article class="news-article" data-news-baseurl="{{ site.baseurl }}">
+<article class="news-article" data-news-baseurl="{{ site.baseurl }}" itemscope itemtype="https://schema.org/NewsArticle">
+	<meta itemprop="mainEntityOfPage" content="{{ page.url | absolute_url }}">
+	<meta itemprop="author" content="{{ site.title | escape }}">
+	<span itemprop="publisher" itemscope itemtype="https://schema.org/Organization" hidden>
+		<meta itemprop="name" content="{{ site.title | escape }}">
+		{% if site.logo %}<link itemprop="logo" href="{{ site.logo | absolute_url }}">{% endif %}
+	</span>
 	<p class="eyebrow">News</p>
-	<h1>{{ page.title | escape }}</h1>
-	<p class="news-article-date"><time datetime="{{ page.scheduled_date | date: '%Y-%m-%d' }}">{{ page.scheduled_date | date: '%B %-d, %Y' }}</time></p>
+	<h1 itemprop="headline">{{ page.title | escape }}</h1>
+	<p class="news-article-date"><time itemprop="datePublished" datetime="{{ page.scheduled_date | date: '%Y-%m-%d' }}">{{ page.scheduled_date | date: '%B %-d, %Y' }}</time></p>
 	{% if page.cover_image %}
-		<img class="news-cover" src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_image_alt | default: page.title | escape }}">
+		<img class="news-cover" itemprop="image" src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_image_alt | default: page.title | escape }}">
 	{% endif %}
-	<div class="news-item-content">
+	<div class="news-item-content" itemprop="articleBody">
 		{{ content }}
 	</div>
 	<p class="news-back-link"><a href="{{ '/news/' | relative_url }}">&larr; Back to all news</a></p>
