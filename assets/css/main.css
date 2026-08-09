@@ -525,6 +525,10 @@ body {
   font-size: clamp(2rem, 5vw, 3.4rem);
 }
 
+.rss-feed-button {
+  margin-top: 0.65rem;
+}
+
 .news-list {
   display: grid;
 }

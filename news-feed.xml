@@ -1,0 +1,29 @@
+---
+layout: null
+permalink: /news/feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | append: ' News' | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ '/news/' | absolute_url | xml_escape }}</link>
+    <atom:link href="{{ '/news/feed.xml' | absolute_url | xml_escape }}" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    {% assign feed_items = site.news | sort: 'scheduled_date' | reverse %}
+    {% assign build_timestamp = site.time | date: '%s' | plus: 0 %}
+    {% for news_item in feed_items %}
+      {% assign item_timestamp = news_item.scheduled_date | date: '%s' | plus: 0 %}
+      {% if item_timestamp <= build_timestamp %}
+    <item>
+      <title>{{ news_item.title | xml_escape }}</title>
+      <link>{{ news_item.url | absolute_url | xml_escape }}</link>
+      <guid isPermaLink="true">{{ news_item.url | absolute_url | xml_escape }}</guid>
+      <pubDate>{{ news_item.scheduled_date | date_to_rfc822 }}</pubDate>
+      <description>{{ news_item.description | default: news_item.content | strip_html | normalize_whitespace | truncate: 500 | xml_escape }}</description>
+    </item>
+      {% endif %}
+    {% endfor %}
+  </channel>
+</rss>
