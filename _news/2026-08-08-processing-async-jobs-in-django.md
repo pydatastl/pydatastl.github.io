@@ -34,6 +34,8 @@ In this session, we'll cover:
 
 Free parking is available for attendees at **Ballpark Village**. We've included a parking map below to help you find the designated parking area and make your arrival easier.
 
+**Parking notice:** Due to the Cardinals game, parking prices will be higher than usual. PyData attendees are on the VIP parking list, so please say **“PyData”** when you arrive at the parking gate to receive free parking.
+
 img:/assets/images/blog/parking.png
 
 📍 **Location:** Spark Coworking – St. Louis
