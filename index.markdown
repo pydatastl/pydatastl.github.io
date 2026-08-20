@@ -91,7 +91,7 @@ permalink: /
 		<article>
 			<h2>Volunteer with us</h2>
 			<p>Help organize monthly meetups, run logistics, or host workshops. We would love to have you on the team.</p>
-			<p><a class="button" href="mailto:gauba.aayush@gmail.com">Email the organizers</a></p>
+			<p><a class="button" href="mailto:stlouis@pydata.org">Email the organizers</a></p>
 		</article>
 	</div>
 </section>
