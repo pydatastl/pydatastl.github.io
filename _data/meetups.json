@@ -205,5 +205,35 @@
         ]
       }
     ] 
+  },
+  {
+    "title": "Accelerating Enterprise Modernization with Agentic AI: Inside AWS Transform",
+    "date": "2026-09-09",
+    "time": "5:30 PM",
+    "end_time": "7:30 PM",
+    "description": [
+      "Enterprises today sit on mountains of legacy code—decades-old mainframe systems, monolithic .NET applications, and complex database architectures that resist modular change. Traditional modernization approaches take 18+ months of manual effort and face a shrinking pool of engineers who understand these systems. What if AI agents could reason about, plan, and execute code transformations at enterprise scale?",
+      "In this session, Saurabh Sharma will walk through AWS Transform—the first agentic AI service purpose-built for enterprise modernization. You'll see how specialized AI agents collaborate to analyze legacy workloads, decompose monoliths, transform code across languages and frameworks, and continuously remediate technical debt—all without the traditional bottlenecks of sequential tooling and scarce expertise.",
+      "What you'll learn:",
+      "How agentic AI differs from traditional rule-based migration tools—agents that reason, plan, and adapt.",
+      "Real-world transformation patterns: mainframe to cloud-native, .NET modernization, and custom code, API, and framework transformations (including Python).",
+      "How continuous modernization shifts tech debt remediation from one-time projects to an always-on capability.",
+      "Who should attend: Software engineers, data practitioners, and technical leaders interested in the intersection of AI and large-scale software engineering. Whether you're modernizing legacy systems at work or curious about how LLMs are being applied beyond chatbots to real production code transformation, this session is for you."
+    ],
+    "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/316295374",
+    "agenda": [
+      "5:30 PM – Meet & greet, networking, and introductions",
+      "Talk + Q&A",
+      "7:30 PM – Wrap-up"
+    ],
+    "photo_directory": "/assets/images/meetups/awsai",
+    "speakers": [
+      {
+        "name": "Saurabh Sharma",
+        "description": [
+          "Saurabh Sharma is a Senior Strategic Modernization Solutions Architect at Amazon Web Services, specializing in AI-driven enterprise application modernization and large-scale cloud migration. He leverages AWS AI services—including AWS Transform—to accelerate the transformation of monolithic architectures into microservices and guide complex migration journeys to AWS. By combining AI-guided analysis with domain-driven design principles, he helps organizations assess, migrate, and modernize their application portfolios, enhancing scalability and resilience through strategic AWS service adoption."
+        ]
+      }
+    ]
   }
 ]
