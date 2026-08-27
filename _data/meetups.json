@@ -230,6 +230,7 @@
     "speakers": [
       {
         "name": "Saurabh Sharma",
+        "photo": "/assets/images/speakers/saurabh.jpeg",
         "description": [
           "Saurabh Sharma is a Senior Strategic Modernization Solutions Architect at Amazon Web Services, specializing in AI-driven enterprise application modernization and large-scale cloud migration. He leverages AWS AI services—including AWS Transform—to accelerate the transformation of monolithic architectures into microservices and guide complex migration journeys to AWS. By combining AI-guided analysis with domain-driven design principles, he helps organizations assess, migrate, and modernize their application portfolios, enhancing scalability and resilience through strategic AWS service adoption."
         ]
