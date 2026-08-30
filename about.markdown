@@ -1,6 +1,7 @@
 ---
 layout: default
-title: about
+title: About PyData St. Louis
+description: Learn about the PyData St. Louis community, our mission, and how we support Python and data practitioners in St. Louis.
 permalink: /about/
 ---
 

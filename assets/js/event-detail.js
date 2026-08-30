@@ -19,7 +19,53 @@
   }
 
   active.hidden = false;
-  document.title = active.querySelector('h1').textContent + ' | PyData St. Louis';
+
+  var titleNode = active.querySelector('h1');
+  var eventTitle = titleNode ? titleNode.textContent.trim() : 'PyData St. Louis Event';
+  var eventDate = active.dataset.eventDate || '';
+  var eventLocation = active.dataset.eventLocation || '';
+  var summary = active.dataset.eventSummary || 'PyData St. Louis meetup details, speakers, agenda, and recordings.';
+
+  document.title = eventTitle + ' | PyData St. Louis';
+
+  var metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) metaDescription.setAttribute('content', summary);
+
+  var canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.href = window.location.href;
+
+  [
+    ['meta[property="og:title"]', eventTitle],
+    ['meta[property="og:description"]', summary],
+    ['meta[name="twitter:title"]', eventTitle],
+    ['meta[name="twitter:description"]', summary]
+  ].forEach(function (pair) {
+    var selector = pair[0];
+    var value = pair[1];
+    var tag = document.querySelector(selector);
+    if (tag) tag.setAttribute('content', value);
+  });
+
+  var eventUrl = window.location.origin + window.location.pathname + '?event=' + encodeURIComponent(eventId);
+  var eventJson = {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    'name': eventTitle,
+    'description': summary,
+    'url': eventUrl,
+    'startDate': eventDate || undefined,
+    'location': eventLocation ? { '@type': 'Place', 'name': eventLocation } : undefined,
+    'organizer': { '@type': 'Organization', 'name': 'PyData St. Louis' }
+  };
+
+  var existingEventScript = document.getElementById('event-schema');
+  if (existingEventScript) existingEventScript.remove();
+
+  var script = document.createElement('script');
+  script.id = 'event-schema';
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(eventJson);
+  document.head.appendChild(script);
 
   function youtubeEmbedUrl(rawUrl) {
     try {

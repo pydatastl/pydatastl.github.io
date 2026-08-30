@@ -3,9 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: home
+title: PyData St. Louis | Data Community in St. Louis
 nav_order: 1
-description: PyData St. Louis is a community for developers and users of open source data tools.
+description: PyData St. Louis is a local Python and data science community featuring meetups, talks, workshops, and open-source learning in St. Louis.
 permalink: /
 
 ---
@@ -35,7 +35,7 @@ permalink: /
 				{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
 				{% if meetup.description %}{% for paragraph in meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
 				<p class="cta-row">
-					<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
+					<a class="button primary" href="{{ '/meetups/' | relative_url }}{{ meetup.title | slugify }}/">Event details</a>
 					{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">RSVP</a>{% endif %}
 				</p>
 			</div>

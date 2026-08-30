@@ -5,6 +5,9 @@ layout: default
 <article class="news-article" data-news-baseurl="{{ site.baseurl }}" itemscope itemtype="https://schema.org/NewsArticle">
 	<meta itemprop="mainEntityOfPage" content="{{ page.url | absolute_url }}">
 	<meta itemprop="author" content="{{ site.title | escape }}">
+	<meta itemprop="description" content="{{ page.description | default: site.description | escape }}">
+	<meta property="article:published_time" content="{{ page.scheduled_date | date_to_xmlschema }}">
+	<meta property="article:modified_time" content="{{ page.last_modified_at | default: page.scheduled_date | date_to_xmlschema }}">
 	<span itemprop="publisher" itemscope itemtype="https://schema.org/Organization" hidden>
 		<meta itemprop="name" content="{{ site.title | escape }}">
 		{% if site.logo %}<link itemprop="logo" href="{{ site.logo | absolute_url }}">{% endif %}
@@ -20,5 +23,29 @@ layout: default
 	</div>
 	<p class="news-back-link"><a href="{{ '/news/' | relative_url }}">&larr; Back to all news</a></p>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "{{ page.title | escape | replace: '"', '\\"' }}",
+  "datePublished": "{{ page.scheduled_date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.title | escape | replace: '"', '\\"' }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title | escape | replace: '"', '\\"' }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url | append: site.logo | escape }}"
+    }
+  },
+  "mainEntityOfPage": "{{ page.url | absolute_url }}",
+  "description": "{{ page.description | default: site.description | escape | replace: '"', '\\"' }}",
+  "image": "{{ page.cover_image | default: site.logo | absolute_url }}"
+}
+</script>
 
 <script src="{{ '/assets/js/news.js' | relative_url }}"></script>

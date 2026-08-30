@@ -1,7 +1,7 @@
 ---
 layout: default
-title: upcoming meetups
-description: List of Upcoming PyData St. Louis meetups
+title: Upcoming PyData St. Louis Meetups
+description: Find upcoming PyData St. Louis meetups, workshops, and community events in the St. Louis area.
 nav_order: 3
 has_children: true
 permalink: /upcoming_meetups/
@@ -23,7 +23,7 @@ permalink: /upcoming_meetups/
 					{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
 					{% if meetup.description %}{% for paragraph in meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
 					<p class="cta-row">
-						<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
+						<a class="button primary" href="{{ '/meetups/' | relative_url }}{{ meetup.title | slugify }}/">Event details</a>
 						{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">RSVP</a>{% endif %}
 					</p>
 			</div>

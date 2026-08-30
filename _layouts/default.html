@@ -1,26 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self' https://forms.gle; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% assign meta_title = page.title | default: site.title %}
-    {% assign meta_description = page.description | default: site.description %}
+    {% assign meta_description = page.description | default: site.description | default: 'PyData St. Louis is a community for Python and data practitioners in St. Louis.' %}
     {% assign canonical_url = page.url | absolute_url %}
     {% assign meta_image = page.cover_image | default: site.logo %}
     {% assign robots_directive = page.robots | default: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' %}
+    {% assign page_title = meta_title | escape %}
+    {% assign fallback_keyword_string = 'PyData St. Louis, Python community, data science meetup, machine learning St. Louis, open source data tools, data engineering meetup' %}
+    {% assign fallback_author = page.author | default: site.author | default: 'PyData St. Louis' %}
     <title>
-      {% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}
+      {% if page.title %}
+        {% if page.title contains site.title %}
+          {{ page.title | escape }}
+        {% else %}
+          {{ page.title | escape }} | {{ site.title | escape }}
+        {% endif %}
+      {% else %}
+        {{ site.title | escape }}
+      {% endif %}
     </title>
     <meta name="description" content="{{ meta_description | escape }}">
+    <meta name="keywords" content="{{ page.keywords | default: site.keywords | default: fallback_keyword_string | escape }}">
     <meta name="robots" content="{{ robots_directive }}">
+    <meta name="author" content="{{ fallback_author | escape }}">
+    <meta name="language" content="{{ page.lang | default: site.lang | default: 'en-US' | escape }}">
+    <meta name="theme-color" content="#1c3a5d">
     <link rel="canonical" href="{{ canonical_url }}">
-    <meta property="og:title" content="{{ meta_title | escape }}">
+    <meta property="og:title" content="{{ page_title }}">
     <meta property="og:description" content="{{ meta_description | escape }}">
     <meta property="og:type" content="{% if page.collection == 'news' %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ canonical_url }}">
     <meta property="og:site_name" content="{{ site.title | escape }}">
+    <meta property="og:locale" content="en_US">
     {% if page.collection == 'news' and page.scheduled_date %}
       <meta property="article:published_time" content="{{ page.scheduled_date | date_to_xmlschema }}">
     {% endif %}
@@ -31,8 +47,29 @@
       <meta name="twitter:image:alt" content="{{ page.cover_image_alt | default: meta_title | escape }}">
     {% endif %}
     <meta name="twitter:card" content="{% if page.cover_image %}summary_large_image{% else %}summary{% endif %}">
-    <meta name="twitter:title" content="{{ meta_title | escape }}">
+    <meta name="twitter:site" content="@PyDataSTL">
+    <meta name="twitter:creator" content="@PyDataSTL">
+    <meta name="twitter:title" content="{{ page_title }}">
     <meta name="twitter:description" content="{{ meta_description | escape }}">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ site.url | escape }}",
+      "logo": "{{ site.url | append: site.logo | escape }}",
+      "description": "{{ site.description | escape }}",
+      "sameAs": [
+        "https://www.linkedin.com/company/pydata-stl",
+        "https://x.com/PyDataSTL",
+        "https://bsky.app/profile/pydatastl.bsky.social",
+        "https://mastodon.social/@pydatastl",
+        "https://www.meetup.com/pydata-st-louis/"
+      ],
+      "areaServed": "St. Louis, Missouri",
+      "knowsAbout": ["Python", "data science", "machine learning", "data engineering", "open source software"]
+    }
+    </script>
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }} News" href="{{ '/news/feed.xml' | absolute_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/skelaton.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">

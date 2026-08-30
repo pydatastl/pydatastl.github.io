@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Event details
-description: Explore PyData St. Louis meetup details, speaker bios, agendas, recordings, and photos from our community events.
-permalink: /event/
+title: PyData St. Louis Meetup Events
+description: Explore upcoming and past PyData St. Louis meetup events, recordings, and community learning opportunities.
+permalink: /meetups/
 ---
+
+{% assign meetups = site.data.meetups | sort: "date" | reverse %}
 
 <section class="hero">
   <p class="eyebrow">Events</p>
@@ -12,7 +14,6 @@ permalink: /event/
 </section>
 
 <section class="meetups-section">
-  {% assign meetups = site.data.meetups | sort: "date" | reverse %}
   <div class="meetups-grid">
     {% for meetup in meetups %}
       {% assign event_slug = meetup.title | slugify %}

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: past meetups
-description: List of Past PyData St. Louis meetups
+title: Past PyData St. Louis Meetups
+description: Browse past PyData St. Louis meetups, talks, and community events to explore the local Python and data science archive.
 nav_order: 2
 has_children: true
 permalink: /past_meetups/
@@ -23,7 +23,7 @@ permalink: /past_meetups/
 					{% if meetup.location %}<p>{{ meetup.location }}</p>{% endif %}
 					{% if meetup.description %}{% for paragraph in meetup.description %}<p>{{ paragraph | escape }}</p>{% endfor %}{% endif %}
 					<p class="cta-row">
-						<a class="button primary" href="{{ '/event/' | relative_url }}?event={{ meetup.title | slugify }}">Event details</a>
+						<a class="button primary" href="{{ '/meetups/' | relative_url }}{{ meetup.title | slugify }}/">Event details</a>
 						{% if meetup.rsvp_url %}<a class="button" href="{{ meetup.rsvp_url }}">Meetup link</a>{% endif %}
 					</p>
 			</div>

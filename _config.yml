@@ -20,8 +20,12 @@
 
 title: PyData St. Louis
 email: stlouis@pydata.org
-description: >- # this means to ignore newlines until "baseurl:"
-  A community for developers and users of open source data tools.
+lang: en-US
+author: PyData St. Louis
+description: >-
+  PyData St. Louis is a community for Python and data practitioners in St. Louis, featuring meetups, talks, workshops, and open-source learning.
+keywords: >-
+  PyData St. Louis, Python community, data science meetup, machine learning St. Louis, open source data tools, data engineering meetup
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stlouis.pydata.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pydatastl
