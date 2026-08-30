@@ -59,6 +59,11 @@ its own directory. The first filename alphabetically is the initial photo, so
 use names such as `01-cover.jpg`, `02-speaker.jpg`, and `03-audience.jpg` to
 control the order. A separate `image` property is not needed.
 
+The individual files in `meetups/*.md` are generated from
+`_data/meetups.json` and are build artifacts, not the source of truth. Do not
+edit or commit those generated files directly; update the JSON data and run
+`python generate_meetups.py` before building the site.
+
 The Upcoming and Past Meetup pages classify events dynamically in Central Time.
 By default, a meetup moves to Past when its listed `time` is reached. To keep it
 in Upcoming until a known ending time, add an optional value such as
