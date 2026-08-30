@@ -12,13 +12,6 @@ permalink: /sitemap.xml
   </url>
   {% endunless %}
 {% endfor %}
-{% for meetup in site.data.meetups %}
-  {% assign meetup_slug = meetup.title | slugify %}
-  {% capture meetup_url %}/event/?event={{ meetup_slug }}{% endcapture %}
-  <url>
-    <loc>{{ meetup_url | absolute_url | xml_escape }}</loc>
-  </url>
-{% endfor %}
 {% for news_item in site.news %}
   {% unless news_item.sitemap == false %}
   <url>
