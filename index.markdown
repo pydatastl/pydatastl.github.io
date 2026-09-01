@@ -20,7 +20,7 @@ permalink: /
 	</div>
 </section>
 
-{% include news-list.html limit=3 %}
+{% include news-list.html limit=2 %}
 
 
 {% assign meetups = site.data.meetups | sort: "date" %}
