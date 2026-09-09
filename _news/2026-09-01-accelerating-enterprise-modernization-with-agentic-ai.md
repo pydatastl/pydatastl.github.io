@@ -38,6 +38,8 @@ In this session, **Saurabh Sharma** will walk through **AWS Transform**, an agen
 
 Free parking is available for attendees at **Ballpark Village**. We'll provide a parking map to help you find the designated parking area and make your arrival easier.
 
+**Parking validation:** When you receive a parking ticket at the Ballpark Village gates, please bring it upstairs to the event so we can validate it for free parking.
+
 img:/assets/images/blog/parking.png
 
 📍 **Location:** Spark Coworking – St. Louis
