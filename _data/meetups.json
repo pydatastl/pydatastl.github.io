@@ -237,5 +237,38 @@
         ]
       }
     ]
+  },
+  {
+    "title": "The Data Analyst Isn’t Disappearing, but the Job is Changing",
+    "date": "2026-10-13",
+    "time": "5:30 PM",
+    "end_time": "7:30 PM",
+    "location": "Spark Coworking",
+    "description": [
+      "Generative AI is increasingly capable of performing tasks that have traditionally been central to data analytics, from writing code and cleaning data to creating visualizations and generating insights. These advances raise important questions about how the role of the data analyst will change as AI becomes more integrated into analytics work.",
+      "In this talk, Dr. Cassie Collier, Assistant Professor of Computer Management and Information Systems at SIUE, will explore how AI is reshaping data analytics work, which tasks may be most affected, and what skills are likely to become more important in an AI-enabled workplace.",
+      "Drawing on published research with data analytics professionals and hiring managers, Cassie will discuss how organizations and analysts are responding to AI-led disruption, where human expertise remains critical, and how data professionals can prepare for an evolving profession. Attendees will also be encouraged to share their own experiences with AI in analytics, connecting the research findings with what is happening in practice.",
+      "Whether you're a data analyst, data scientist, manager, student, or simply interested in the changing role of AI in data work, this session will offer a research-backed look at what AI may mean for the future of the analytics profession."
+    ],
+    "rsvp_url": "https://www.meetup.com/pydata-st-louis/events/316703010",
+    "agenda": [
+      "5:30 PM – Meet & greet, networking, and introductions",
+      "Talk + Q&A",
+      "7:30 PM – Wrap-up"
+    ],
+    "speakers": [
+      {
+        "name": "Cassandra “Cassie” Collier, Ph.D.",
+        "photo": "/assets/images/speakers/cassie.jpeg",
+        "description": [
+          "Cassandra “Cassie” Collier, Ph.D., is an Assistant Professor of Computer Management and Information Systems at Southern Illinois University Edwardsville, where she teaches courses in data analytics, data visualization, big data, and information systems. Before earning her Ph.D. in Management Information Systems from the University of Houston, she worked as a data analyst in the oil and gas industry.",
+          "Her research focuses on the changing skills and competencies required of data professionals, the impact of artificial intelligence on analytics work, the influence of information systems design, and best practices in IS pedagogy. Her work has been published in outlets including MIS Quarterly Executive, Communications of the Association for Information Systems, and the Journal of Information Systems Education.",
+          "She also works extensively on AI-enabled teaching and faculty development at SIUE, exploring how generative AI is changing both the skills students need and the ways those skills should be taught."
+        ],
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/cassieartman/"
+        }
+      }
+    ]
   }
 ]
