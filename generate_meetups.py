@@ -18,7 +18,7 @@ with meetups_path.open('r', encoding='utf-8') as f:
 
 for meetup in meetups:
     title = meetup['title']
-    slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+    slug = re.sub(r'[^a-z0-9]+', '-', title.lower().replace('’', '')).strip('-')
     description = ' '.join(meetup.get('description', [])[:2])
     description = re.sub(r'\s+', ' ', description).strip()
     page = output_dir / f'{slug}.md'

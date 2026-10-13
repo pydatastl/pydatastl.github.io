@@ -244,6 +244,7 @@
     "time": "5:30 PM",
     "end_time": "7:30 PM",
     "location": "Spark Coworking",
+    "photo_directory": "/assets/images/meetups/datajobchanging",
     "description": [
       "Generative AI is increasingly capable of performing tasks that have traditionally been central to data analytics, from writing code and cleaning data to creating visualizations and generating insights. These advances raise important questions about how the role of the data analyst will change as AI becomes more integrated into analytics work.",
       "In this talk, Dr. Cassie Collier, Assistant Professor of Computer Management and Information Systems at SIUE, will explore how AI is reshaping data analytics work, which tasks may be most affected, and what skills are likely to become more important in an AI-enabled workplace.",

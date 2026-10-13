@@ -2,8 +2,8 @@
 title: "The Data Analyst Isn't Disappearing, but the Job is Changing"
 description: Join PyData St. Louis on October 13 for a research-backed conversation about how AI is reshaping data analytics work.
 scheduled_date: 2026-10-12
-cover_image: /assets/images/speakers/cassie.jpeg
-cover_image_alt: Cassandra “Cassie” Collier, Ph.D., speaker for the October 13 PyData St. Louis meetup
+cover_image: /assets/images/meetups/datajobchanging/octoberpydata.png
+cover_image_alt: The Data Analyst Isn’t Disappearing, but the Job is Changing meetup announcement
 ---
 
 Join us **tomorrow, Tuesday, October 13**, for an engaging conversation about how generative AI is changing the work of data analysts.
