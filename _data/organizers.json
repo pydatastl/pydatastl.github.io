@@ -9,12 +9,19 @@
   },
   {
     "name": "Sai Sriram Dubasi",
-    "position": "Marketing Chair",
+    "position": "Co-Chair",
     "description": [
       "Sai Sriram Dubasi holds an M.S. in Data Analytics Engineering and is a data and technology professional passionate about solving problems, optimizing processes, and creating meaningful impact. As a Co-host, he focuses on social media, community outreach, and bringing together students, professionals, and enthusiasts across the local Python, data science, and AI community. Beyond his tech career, he volunteers with NAMI and is passionate about fostering an inclusive community, encouraging collaboration, and creating opportunities for others to learn and grow."
     ],
     "photo": "/assets/images/organizers/sai.jpeg"
-    
+  },
+  {
+    "name": "Biswajith Yetukuri",
+    "position": "Marketing Chair",
+    "description": [
+      "Biswa is a technology professional passionate about innovation, community building, and connecting people through meaningful experiences. As Marketing Chair, he focuses on expanding the community's reach, strengthening its digital presence, promoting events, and creating opportunities for professionals to connect, collaborate, and grow."
+    ],
+    "photo": "/assets/images/organizers/biswajith.jpeg"
   },
   {
     "name": "Aarav Gauba",
