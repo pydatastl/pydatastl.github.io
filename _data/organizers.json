@@ -30,5 +30,12 @@
       "Aarav Gauba is a dedicated high school student with a strong interest in technology and design. During his high school years, he developed practical skills in both engineering and software development, using Autodesk Inventor to create 3D models of various objects and learning multiple programming languages, including Python, Java, HTML, and CSS. He is also a member of the National Honor Society and is deeply committed to giving back through community service events in the St. Louis area."
     ],
     "photo": "/assets/images/organizers/aarav.png"
+  },
+  {
+    "name": "Manish Nadendla",
+    "position": "Online Chair",
+    "description": [
+      "Manish Nadendla is a security researcher and software developer with a background in computer science from the University of Texas at Dallas. His work spans penetration testing, vulnerability research, artificial intelligence, and software security, with a focus on identifying security vulnerabilities and exploring AI-driven approaches. He has experience in security research, full-stack development, and teaching computer science. As Online Chair, he is passionate about fostering collaboration, connecting students and industry professionals, and building a community where individuals can share knowledge, explore emerging technologies, and grow together."
+    ]
   }
 ]
